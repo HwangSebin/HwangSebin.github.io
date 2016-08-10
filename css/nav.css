@@ -425,17 +425,5 @@
     .navBar {
         display: none;
     }
-    .contentsTxtWrap {
-        padding: 0 15px;
-    }
-    .contentTitle {
-        font-size: 4.3em;
-        line-height: 60px;
-        padding-bottom: 8px;
-    }
-    .subTitle {
-        font-size: 1.3em;
-        padding-bottom: 10px;
-    }
 }
 

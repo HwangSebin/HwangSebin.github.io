@@ -15,13 +15,14 @@ body {
     width: 100%;
     height: 500px;
     display: table;
-    background-color: #333;
+    background: url("../img/dr_bg.jpg") no-repeat;
 }
 
-.contentsImg2 {
+.contentsBox2 {
     width: 100%;
     height: 500px;
-    background-color: #666;
+    display: table;
+    background: url("../img/hj_bg.jpg") no-repeat;
 }
 
 .contentsTxtWrap {
@@ -68,15 +69,40 @@ body {
 .footerWrap{
     display: table-cell;
     vertical-align: middle;
+    overflow: auto;
 }
 .footerTxt{
     font-size: 14px;
     color: #333;
+    padding-left: 30px;
+    float: left;
 }
 .footerIcon{
+    padding-right: 30px;
     text-align: right;
+    float: right;
 }
 .footerIcon img{
     width: 24px;
     height: 24px;
+}
+@media(max-width: 768px) {
+    .contentsTxtWrap {
+        padding: 0 15px;
+    }
+    .contentTitle {
+        font-size: 4.3em;
+        line-height: 60px;
+        padding-bottom: 8px;
+    }
+    .subTitle {
+        font-size: 1.3em;
+        padding-bottom: 10px;
+    }
+    .footerTxt{
+        padding-left: 15px;
+    }
+    .footerIcon{
+        padding-right: 15px;
+    }
 }

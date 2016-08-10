@@ -25,9 +25,8 @@ body {
 
 .subContentTxt {
     position: absolute;
-    width: 100%;
     top: 30%;
-    left: 300px;
+    left: 10%;
     line-height: 0.9;
     color: #fff;
 }
@@ -48,7 +47,7 @@ body {
     padding-bottom: 30px;
 }
 
-.linkBtn button {
+.subBodyBtnWrap>button {
     width: 300px;
     height: 45px;
     width: 200px;
@@ -62,7 +61,7 @@ body {
     transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
 
-.linkBtn button:hover {
+.subBodyBtnWrap>button:hover {
     background-color: #fff;
     color: #000;
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
@@ -89,11 +88,7 @@ body {
 	background-color: #eee;
 	float: right;
 }
-.linkBtn{
-	width: 97%;
-	height: 170px;
-	background-color: #333;
-}
+
 @media(max-width: 768px) {
     .subBodyTxtWrap{
     	width: 100%;
