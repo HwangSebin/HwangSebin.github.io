@@ -1,0 +1,105 @@
+/* SUB 외부 CSS 파일*/
+
+@charset "utf-8";
+body {
+    padding-top: 90px;
+    -webkit-transition: top 0.2s ease-in-out;
+    transition: top 0.2s ease-in-out;
+}
+
+.subContentImgWrap {
+    width: 100%;
+    height: 700px;
+    background: url("../img/dr_bg.jpg") no-repeat;
+    position: relative;
+}
+
+.imgCover {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.subContentTxt {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 300px;
+    line-height: 0.9;
+    color: #fff;
+}
+
+.subTypeTitle {
+    padding-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.subTitleTxt {
+    font-size: 4em;
+    line-height: 70px;
+    padding-bottom: 10px;
+}
+
+.subToolTitle {
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+
+.linkBtn button {
+    width: 300px;
+    height: 45px;
+    width: 200px;
+    padding: 8px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    background-color: transparent;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.linkBtn button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+.subContentBodyTxtWrap{
+	position: relative;
+	top: -50px;
+	width: 100%;
+	height: 400px;
+}
+.subContentBodyTxt{
+	overflow: auto;
+}
+.subBodyTxtWrap{
+	width: 70%;
+	height: 300px;
+	background-color: #ddd;
+	float: left;
+}
+.subBodyBtnWrap{
+	margin-top: 50px;
+	width: 30%;
+	height: 200px;
+	background-color: #eee;
+	float: right;
+}
+.linkBtn{
+	width: 97%;
+	height: 170px;
+	background-color: #333;
+}
+@media(max-width: 768px) {
+    .subBodyTxtWrap{
+    	width: 100%;
+    }
+    .subBodyBtnWrap{
+    	margin-top: 0px;
+    	width: 100%;
+    }
+}

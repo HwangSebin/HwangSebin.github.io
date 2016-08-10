@@ -1,36 +1,133 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <title>Test by HwangSebin</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Test</h1>
-      <h2 class="project-tagline"></h2>
-    </section>
+    <title>LUCETE</title>
+    <link rel="stylesheet" href="css/nomalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Lora:400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <style>
+    @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+    body {
+        font-family: 'Lora', serif;
+    }
+    
+    .nanum {
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    
+    .helvetica {
+        font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+    }
+    </style>
+</head>
 
-    <section class="main-content">
-      <h1>
-<a id="느하어야아어-어려워" class="anchor" href="#%EB%8A%90%ED%95%98%EC%96%B4%EC%95%BC%EC%95%84%EC%96%B4-%EC%96%B4%EB%A0%A4%EC%9B%8C" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>느하어야아어 어려워</h1>
+<body>
+    <div id="warp" class="wrapper">
+        <!-- 기본메뉴 시작 -->
+        <header class="navBar">
+            <div class="navBarvertical">
+                <div class="navBarWrapTitle">
+                    <div class="navBarTitle biImg">LUCETE</div>
+                </div>
+                <div class="navBarWrapList">
+                    <nav class="navList">
+                        <ul>
+                            <li><a href="index.html">MAIN</a></li>
+                            <li><a href="javascript:">WEB PUBLISHING</a></li>
+                            <li><a href="javascript:">WEB DESIGN</a></li>
+                            <li><a href="javascript:">ABOUT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- 기본메뉴 끝 -->
+        <!-- 햄버거 메뉴 시작 -->
+        <header class="navBarMini">
+            <div class="navBarMiniWrap row">
+                <div class="navMiniList col-xs-12">
+                    <div class="col-xs-9">
+                        <span class="navBarTitle">LUCETE</span>
+                    </div>
+                    <div class="col-xs-3 navMiniIcon">
+                        <div class="hambox">
+                            <div class="line-top"></div>
+                            <div class="line-middle"></div>
+                            <div class="line-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navMiniListTap col-xs-12">
+                    <ul>
+                        <li><a href="index.html">MAIN</a></li>
+                        <li><a href="javascript:">WEB PUBLISHING</a></li>
+                        <li><a href="javascript:">WEB DESIGN</a></li>
+                        <li><a href="javascript:">ABOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- 햄버거 메뉴 끝 -->
+        <!-- 컨텐츠 시작 -->
+        <div id="contentsWrap" class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 contentsBox">
+                    <div class="contentsTxt">
+                        <div class="contentsTxtWrap">
+                            <div class="typeTitle helvetica">
+                                Web Publishing
+                            </div>
+                            <div class="contentTitle">
+                                Dr.jart Renewal
+                            </div>
+                            <div class="subTitle helvetica">
+                                When text is rendered by a program, sometimes there will be characters
+                            </div>
+                            <div class="toolTitle helvetica">
+                                html, css, jquery, nodejs
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 contentsBox contentsImg2">
+                    <div class="contentsTxt">
+                        <div class="contentsTxtWrap">
+                            <div class="typeTitle helvetica">
+                                WebApp Publishing
+                            </div>
+                            <div class="contentTitle">
+                                Hanjibong Project
+                            </div>
+                            <div class="subTitle helvetica">
+                                When text is rendered by a program, sometimes there will be characters
+                            </div>
+                            <div class="toolTitle helvetica">
+                                html, css, jquery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 컨텐츠 끝 -->
+        <footer class="footer container-fluid">
+            <div class="footerWrap row">
+                <div class="col-xs-6 footerTxt helvetica">
+                    Copyright © 2016 LUCETE.
+                </div>
+                <div class="col-xs-6 footerIcon">
+                   <a href="https://hwangsebin.github.io/port-SB/"><img src="img/gitMark.png"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
 
-<h2>
-<a id="부제목" class="anchor" href="#%EB%B6%80%EC%A0%9C%EB%AA%A9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>부제목</h2>
-
-<p>이렇게 설명</p>
-
-      <footer class="site-footer">
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
-  </body>
 </html>
