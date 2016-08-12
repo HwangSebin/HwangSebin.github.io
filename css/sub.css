@@ -6,7 +6,9 @@ body {
     -webkit-transition: top 0.2s ease-in-out;
     transition: top 0.2s ease-in-out;
 }
-
+.subContentImgTxtWrap{
+    position: relative;
+}
 .imgCover {
     background: rgba(0, 0, 0, 0.4);
     position: absolute;
@@ -68,7 +70,7 @@ body {
 
 .subContentBodyTxtWrap {
     position: relative;
-    top: -300px;
+    top: -20px;
     width: 100%;
     height: 400px;
 }
@@ -130,5 +132,10 @@ body {
         position: static;
         width: 100%;
         margin-top: 80px;
+    }
+}
+@media(max-height: 600px) {
+    .subContentBodyTxtWrap{
+        top: -70px;
     }
 }
