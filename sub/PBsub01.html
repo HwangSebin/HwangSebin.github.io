@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="../css/sub.css">
     <script src="../js/jquery-1.12.3.js"></script>
     <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script type="text/javascript" src="../js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
     <style>
     @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
     body {
@@ -80,37 +83,75 @@
         <!-- 햄버거 메뉴 끝 -->
         <!-- 컨텐츠 시작 -->
         <div class="subContentWrap">
-            <div class="subContentImgWrap">
-                <div class="subContentImg">
-                    <div class="imgCover">
-                    </div>
+            <div id="subBackgroundWrap" class="subBackground">
+                <div style="background-image: url(../img/dr_bg.jpg);">
+                    <div class="imgCover"></div>
                 </div>
-                <div class="subContentTxt">
-                    <div class="subTypeTitle helvetica">
-                        Web Publishing
-                    </div>
-                    <div class="subTitleTxt">
-                        Dr.jart Renewal
-                    </div>
-                    <div class="subToolTitle helvetica">
-                        html, css, jquery, nodejs
-                    </div>
+            </div>
+            <div class="subContentTxt">
+                <div class="subTypeTitle helvetica">
+                    Web Publishing
+                </div>
+                <div class="subTitleTxt">
+                    Dr.jart Renewal
+                </div>
+                <div class="subBodyBtnWrap">
+                    <button>VIEW</button>
                 </div>
             </div>
             <div class="subContentBodyTxtWrap">
                 <div class="subContentBodyTxt">
                     <div class="subBodyTxtWrap">
-                        <div class=""></div>
+                        <div class="subBodyTxtContent">
+                        </div>
                     </div>
-                    <div class="subBodyBtnWrap">
-
-                            <button>VIEW</button>
-
+                    <div class="subToolTitle helvetica">
+                        <div class="toolTxt">
+                            <div class="teamTxtTitle">Team Project</div>
+                            <span class="toolTxtTitle">Development Environment</span>
+                            <br/> - HTML5, jquery 1.12.3, nodejs v4.4.7LTS
+                        </div>
                     </div>
                 </div>
                 <!-- 컨텐츠 끝 -->
             </div>
             <!-- Wrapper 끝 -->
+            <script>
+            // init controller
+            var controller = new ScrollMagic.Controller({
+                globalSceneOptions: {
+                    triggerHook: "onEnter",
+                    duration: "200%"
+                }
+            });
+            var controller2 = new ScrollMagic.Controller({
+                globalSceneOptions: {
+                    triggerHook: "onEnter",
+                    duration: "130%"
+                }
+            });
+
+            // build scenes
+            new ScrollMagic.Scene({
+                    triggerElement: "#subBackgroundWrap"
+                })
+                .setTween("#subBackgroundWrap > div", {
+                    y: "70%",
+                    ease: Linear.easeNone
+                })
+                .addIndicators()
+                .addTo(controller);
+
+            new ScrollMagic.Scene({
+                    triggerElement: ".subBodyTxtWrap"
+                })
+                .setTween(".subBodyTxtWrap > div", {
+                    y: "10%",
+                    ease: Linear.easeNone
+                })
+                .addIndicators()
+                .addTo(controller2);
+            </script>
 </body>
 
 </html>
