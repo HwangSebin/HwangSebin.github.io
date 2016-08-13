@@ -12,8 +12,8 @@
     background-color: #fff;
     z-index: 99998;
     overflow: auto;
-    -webkit-transition: top 0.2s ease-in-out;
-    transition: top 0.2s ease-in-out;
+    -webkit-transition: top 0.1s ease-in-out;
+    transition: top 0.1s ease-in-out;
 }
 
 .navBarvertical {
@@ -95,8 +95,8 @@
     top: 0px;
     background-color: #fff;
     z-index: 999998;
-    -webkit-transition: top 0.2s ease-in-out;
-    transition: top 0.2s ease-in-out;
+    -webkit-transition: top 0.1s ease-in-out;
+    transition: top 0.1s ease-in-out;
     display: none;
 }
 

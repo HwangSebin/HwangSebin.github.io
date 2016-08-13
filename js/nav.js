@@ -4,7 +4,7 @@ $(document).ready(function () {
 	// 스크롤시 nav 숨기기
     var didScroll;
     var lastScrollTop = 0;
-    var delta = 5; //동작의 구현이 시작되는 위치
+    var delta = 3; //동작의 구현이 시작되는 위치
     var navbarHeight = $(".navBar,.navBarMini,.navMiniListTap").outerHeight(); //영향받을 요소 선택
 
 
