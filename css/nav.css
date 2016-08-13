@@ -24,6 +24,10 @@
 .navBarWrapTitle {
     float: left;
 }
+.navBarWrapTitle a{
+    text-decoration: none;
+    color: #333;
+}
 
 .navBarWrapList {
     float: left;
