@@ -14,27 +14,59 @@ body {
     padding: 0;
 }
 
+.contensBoxWrap{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
 .contentsBox {
+    position: relative;
     width: 100%;
     height: 450px;
     display: table;
     background: url("../img/dr_bg.jpg") no-repeat;
+    transform-origin: center center 0px;
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
 }
-
+.contentsBox:hover{
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 12);
+    transform: scale(1.2, 1.2);
+}
 .contentsBox2 {
+    position: relative;
     width: 100%;
     height: 450px;
     display: table;
     background: url("../img/hj_bg.jpg") no-repeat;
+    transform-origin: center center 0px;
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+.contentsBox2:hover{
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 12);
+    transform: scale(1.2, 1.2);
 }
 
 .contentsTxtWrap {
+    position: relative;
     padding-left: 30px;
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
 
 .contentsTxt {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
     display: table-cell;
     vertical-align: middle;
     color: #fff;

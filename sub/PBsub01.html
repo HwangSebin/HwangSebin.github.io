@@ -102,7 +102,7 @@
                         Dr.jart Renewal
                     </div>
                     <div class="subBodyBtnWrap">
-                        <button>VIEW</button>
+                        <button id="viewbtn" onClick="window.open('http://starseat3.cafe24.com:3000/')">VIEW</button>
                     </div>
                 </div>
             </div>
@@ -151,43 +151,49 @@
                     </div>
                 </div>
             </div>
-            <!-- Wrapper 끝 -->
-            <script>
-            // init controller
-            var controller = new ScrollMagic.Controller({
-                globalSceneOptions: {
-                    triggerHook: "onEnter",
-                    duration: "200%"
-                }
-            });
-            var controller2 = new ScrollMagic.Controller({
-                globalSceneOptions: {
-                    triggerHook: "onEnter",
-                    duration: "130%"
-                }
-            });
+            <div class="subContentImgContentsWrap">
+                <div class="subContentImgContents">
+                
+                </div>
+            </div>
+        </div>
+        <!-- Wrapper 끝 -->
+        <script>
+        // init controller
+        var controller = new ScrollMagic.Controller({
+            globalSceneOptions: {
+                triggerHook: "onEnter",
+                duration: "200%"
+            }
+        });
+        var controller2 = new ScrollMagic.Controller({
+            globalSceneOptions: {
+                triggerHook: "onEnter",
+                duration: "130%"
+            }
+        });
 
-            // build scenes
-            new ScrollMagic.Scene({
-                    triggerElement: "#subBackgroundWrap"
-                })
-                .setTween("#subBackgroundWrap > div", {
-                    y: "70%",
-                    ease: Linear.easeNone
-                })
-                .addIndicators()
-                .addTo(controller);
+        // build scenes
+        new ScrollMagic.Scene({
+                triggerElement: "#subBackgroundWrap"
+            })
+            .setTween("#subBackgroundWrap > div", {
+                y: "70%",
+                ease: Linear.easeNone
+            })
+            .addIndicators()
+            .addTo(controller);
 
-            new ScrollMagic.Scene({
-                    triggerElement: ".subBodyTxtWrap"
-                })
-                .setTween(".subBodyTxtWrap > div", {
-                    y: "10%",
-                    ease: Linear.easeNone
-                })
-                .addIndicators()
-                .addTo(controller2);
-            </script>
+        new ScrollMagic.Scene({
+                triggerElement: ".subBodyTxtWrap"
+            })
+            .setTween(".subBodyTxtWrap > div", {
+                y: "10%",
+                ease: Linear.easeNone
+            })
+            .addIndicators()
+            .addTo(controller2);
+        </script>
 </body>
 
 </html>
