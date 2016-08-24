@@ -8,7 +8,7 @@
     <title>Lucete</title>
     <link rel="stylesheet" href="../css/nomalize.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Lora:400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/ionicons.min.css">
     <link rel="stylesheet" href="../css/sub.css">
@@ -18,24 +18,7 @@
     <script type="text/javascript" src="../js/TweenMax.min.js"></script>
     <script type="text/javascript" src="../js/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script type="text/javascript" src="../js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-    <style>
-    @import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
-    body {
-        font-family: 'Lora', serif;
-    }
-    
-    .nanum {
-        font-family: 'Nanum Gothic Coding', serif;
-    }
-    
-    .robotoThin {
-        font-family: 'Roboto-Thin'
-    }
-    
-    .robotoM {
-        font-family: 'Roboto-Medium'
-    }
-    </style>
+    <script type="text/javascript" src="../js/subScroll.js"></script>
 </head>
 
 <body>
@@ -45,7 +28,9 @@
         <header class="navBar">
             <div class="navBarvertical">
                 <div class="navBarWrapTitle">
-                    <div class="navBarTitle biImg">LUCETE</div>
+                    <a href="../index.html">
+                        <div class="navBarTitle biImg">LUCETE</div>
+                    </a>
                 </div>
                 <div class="navBarWrapList">
                     <nav class="navList">
@@ -109,10 +94,10 @@
             <div class="subContentBodyTxtWrap">
                 <div class="subContentBodyTxt">
                     <div class="subBodyTxtWrap">
-                        <div class="subBodyTxtContent robotoThin">
-                            <pre>
-                                
-                            </pre>
+                        <div class="subBodyTxtContent nanum">
+                            본 프로젝트는 Dr.jart 홈페이지 리뉴얼 프로젝트로 Bootstrap3을 사용하여 반응형 웹페이지를 만들었으며, Ajax 통신을 이용하여 실시간으로 클라이언트와 서버가 통신할 수 있는 환경을 구축하였다. 회원가입 시 Javascript 정규표현식을 사용하여 문자열을 검열할 수 있으며, Bootstrap의 Validation states로 클라이언트에게 즉각적인 UX를 구현하였다. 우편번호 검색 시 가상 DB에서 데이터를 가지고 올 수 있도록 하였다. <br/>
+                            리뷰 페이지에선 jQuery Plugin 인 SmootScroll를 사용하여 페이지 이동 및 ScrollTop 버튼을 누를 경우 부드러운 화면 이동을 구현하였고,<br/> Css의 transform를 사용하여 마우스 오버 시 이미지 확대 기능을 추가하였다. ImgLiquid를 활용하여 각각 다른 이미지의 크기를 어느 기기에서나 같은 사이즈의 이미지 크기로 보이게 구현하였다.<br/>
+                            <abbr title="attribute" class="smallTxt">* 개인 작업범위만 인덱스 페이지에 구현되여있음.</abbr>
                         </div>
                     </div>
                 </div>
@@ -144,7 +129,7 @@
                                 <div class="teamTxtTitle robotoM">
                                     Development Environment
                                     <div class="toolTxtSub robotoThin">
-                                        - HTML5, jquery 1.12.3, nodejs v4.4.7LTS
+                                        - HTML5, Bootstrap3, jquery 1.12.3, nodejs v4.4.7LTS
                                     </div>
                                 </div>
                             </div>
@@ -158,53 +143,17 @@
                 </div>
             </div>
             <footer class="footer">
-            <div class="footerWrap">
-                <div class="footerTxt robotoThin">
-                    Copyright © 2016 LUCETE.
+                <div class="footerWrap">
+                    <div class="footerTxt robotoThin">
+                        Copyright © 2016 LUCETE.
+                    </div>
+                    <div class="footerIcon">
+                        <a href="https://github.com/HwangSebin"><img src="../img/gitMark.png"></a>
+                    </div>
                 </div>
-                <div class="footerIcon">
-                    <a href="https://github.com/HwangSebin"><img src="../img/gitMark.png"></a>
-                </div>
-            </div>
-        </footer>
+            </footer>
         </div>
         <!-- Wrapper 끝 -->
-        <script>
-        // init controller
-        var controller = new ScrollMagic.Controller({
-            globalSceneOptions: {
-                triggerHook: "onEnter",
-                duration: "200%"
-            }
-        });
-        var controller2 = new ScrollMagic.Controller({
-            globalSceneOptions: {
-                triggerHook: "onEnter",
-                duration: "130%"
-            }
-        });
-
-        // build scenes
-        new ScrollMagic.Scene({
-                triggerElement: "#subBackgroundWrap"
-            })
-            .setTween("#subBackgroundWrap > div", {
-                y: "70%",
-                ease: Linear.easeNone
-            })
-            .addIndicators()
-            .addTo(controller);
-
-        new ScrollMagic.Scene({
-                triggerElement: ".subBodyTxtWrap"
-            })
-            .setTween(".subBodyTxtWrap > div", {
-                y: "10%",
-                ease: Linear.easeNone
-            })
-            .addIndicators()
-            .addTo(controller2);
-        </script>
 </body>
 
 </html>

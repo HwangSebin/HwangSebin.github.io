@@ -4,8 +4,11 @@ body {
     padding-top: 90px;
     -webkit-transition: top 0.2s ease-in-out;
     transition: top 0.2s ease-in-out;
+    font-family: 'Taviraj', serif;
 }
-
+.robotoThin {
+        font-family: 'Roboto-Thin'
+    }
 
 /*컨텐츠 시작*/
 
