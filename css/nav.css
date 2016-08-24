@@ -419,6 +419,35 @@
 
 /*네비게이션제어 끝*/
 
+.footer {
+    display: table;
+    width: 100%;
+    height: 40px;
+}
+
+.footerWrap {
+    display: table-cell;
+    vertical-align: middle;
+    overflow: auto;
+}
+
+.footerTxt {
+    font-size: 12px;
+    color: #333;
+    padding-left: 30px;
+    float: left;
+}
+
+.footerIcon {
+    padding-right: 30px;
+    text-align: right;
+    float: right;
+}
+
+.footerIcon img {
+    width: 24px;
+    height: 24px;
+}
 
 /*미디어쿼리 시작*/
 
@@ -428,6 +457,12 @@
     }
     .navBar {
         display: none;
+    }
+    .footerTxt {
+        padding-left: 15px;
+    }
+    .footerIcon {
+        padding-right: 15px;
     }
 }
 
