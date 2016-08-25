@@ -1,0 +1,322 @@
+@charset "utf-8";
+
+*{
+      -webkit-box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      box-sizing: border-box;
+   }
+   body{
+      margin:0;
+   }
+      #wrap{
+         width: 100%;
+      }
+
+      #content {
+         width: 100%;
+      }
+
+      .findWrapper{
+         position:relative;
+         width:80%;
+         margin:100px auto 20px auto;
+         overflow-x: hidden;
+         height: 600px;
+      }
+      .findIdBox{
+         float:left;
+         width:50%;
+         background-color: #fff;
+         border: 1px solid #ddd;
+      }
+      .findPwBox{
+         float:left;
+         width:50%;
+         background-color: #fff;
+         border: 1px solid #ddd;
+      }
+      .findIdNavi, .findPwNavi{
+         float:left;
+         font-weight: bold;
+         font-size: 15px;
+         text-align: center;
+         width:50%;
+         padding:15px;
+         background-color: #fff;
+         border:1px solid #ddd;
+         border-bottom-width:0;
+         border-radius: 30px 0 0 0;
+      }
+      .findIdNavi a, .findPwNavi a{
+         color:#bbb;
+         text-decoration: none;
+         font-size: 20px;
+      }
+      .findIdNavi a:hover, .findPwNavi a:hover{
+         color:#ccc;
+      }
+      .findBoxWrapper1{
+         display: table;
+      }
+      .findBoxWrapper2{
+         display: table-cell;
+         vertical-align: middle;
+         width:600px;
+         height:450px;
+         padding-left:20px;
+         padding-right:20px;
+         background-color: #eee;
+         position:relative;
+      }
+      .findLoginSuccess{
+         text-align: center;
+         font-size: 15px;
+         padding:5px;
+         border-radius: 5px;
+         background-color: #fff;
+      }
+      .findLoginSuccess span{
+         text-decoration: underline;
+         color:gray;
+         font-weight:bold;
+      }
+
+      label {
+         float:left;
+         width:9em;
+         text-indent: 1.5em;
+      }
+      .byPhoneBox,.byMailBox{
+         display: none;
+         margin-top:20px;
+      }
+      .findError{
+         border: 1px solid red;
+      }
+      .findOpenId{
+         position:relative;
+         left:100%;
+      }
+      .findOpenPw{
+         position:relative;
+         right:100%;
+      }
+      .findIdBox img{
+         width:100%;
+         height: 450px;
+         position:absolute;
+         left:-100%;
+         opacity: 0.4;
+      }
+      .findPwBox img{
+         width:100%;
+         height: 450px;
+         position:absolute;
+         right:-100%;
+         opacity: 0.4;
+      }
+      .findIdImgTop{
+      	width:100%;
+        height: 450px;
+        position:absolute;
+        left:-100%;
+        border:10px solid #fff;
+        background-color: #000;
+        opacity: 0.2;
+      }
+      .findPwImgTop{
+      	width:100%;
+        height: 450px;
+        position:absolute;
+        right:-100%;
+        border:10px solid #fff;
+        background-color: #000;
+        opacity: 0.2;
+      }
+      #pwId{
+         width:70%;
+      }
+      .findPwProcess2,.findPwProcess3 {
+         display: none;
+      }
+      .findPwProcessBtn{
+         position:absolute;
+         bottom:10px;
+         right:10px;
+      }
+      .pwByMailBox, .pwByPhoneBox{
+         display: none;
+      }
+      .findProcess{
+         color:#1751A3;
+         font-weight: bold;
+      }
+ 
+      #findLoginBtn{
+         width:70px;
+         height:50px;
+
+      }
+      .findLoginBox{
+         width:100%;
+         margin:0 auto;
+         position:relative;
+         top:20px;
+         text-align: center;
+      }
+     .findLoginBox input{
+         vertical-align: middle;
+         margin:20px auto;
+         width:180px;
+         height:30px;
+      }
+      #loginBtn{
+         width: 60px;
+         height: 60px;
+         float:right;
+         position:relative;
+         right:20px;
+         border-radius: 5px;
+         background-color:#fff;
+         color:black;
+      }
+      .loginWrapper1{
+         display: table;
+         width:100%;
+      }
+      .loginWrapper2{
+         display: table-cell;
+         vertical-align: middle;
+         width:350px;
+         height:100px;
+         border:1px dotted gray;
+         border-radius: 5px;
+         padding:0;
+      }
+
+      .findBack{
+         display:none;
+         width:500px;
+         height:500px;
+         background-image: url("../img/cube2.jpg");
+         background-size: cover;
+      }
+      .findSlider{
+         -webkit-transform: translateX(100%);
+         transform: translateX(100%);
+         -webkit-transition: all 0.4s ease-out;
+         transition: all 0.6s ease-out;
+      }
+      .findSliderX{
+         -webkit-transform: translateX(-0%);
+         transform: translateX(-0%);
+         -webkit-transition: all 0.4s ease-out;
+         transition: all 0.6s ease-out;
+      }
+      .findSliderRe{
+         -webkit-transform: translateX(-100%);
+         transform: translateX(-100%);
+         -webkit-transition: all 0.4s ease-out;
+         transition: all 0.6s ease-out;
+      }
+      .findSliderXRe{
+         -webkit-transform: translateX(0%);
+         transform: translateX(0%);
+         -webkit-transition: all 0.4s ease-out;
+         transition: all 0.6s ease-out;
+      }
+      .findNaviSelected{
+         position:relative;
+         top:10px;
+         background-color: #eee;
+      }
+      .findNaviSelected a{
+         color:gray;
+      }
+      .findBoxId, .findBoxPw{
+         padding:20px;
+      }
+      .findContentBanner{
+      	background-image: url("../img/find_1.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position:20%;
+         width:100%;
+         height:400px;
+         margin:0 auto;
+      }
+      .findInputFocused{
+         border: 1px solid blue;
+      }
+      .findInputError{
+         border: 1px solid red;
+         font-weight:bold;
+      }
+      @media(max-width: 768px){
+         .findOpenId{
+            position:relative;
+            top:0;
+            left:0;
+         }
+         .findOpenPw{
+            position:relative;
+            top:0;
+            left:0;
+         }
+         .findFont-xs{
+            font-size:90%;
+         }
+         .findWrapper .findFont-xs{
+            font-size:90%;
+         }
+         .findLoginBox-xs{
+            width:80%;
+            margin:0 auto;
+         }
+         .findBox-xs{
+            width:100%;
+         }
+         .findWrapper-xs{
+            margin-top:30px;
+         }
+         .findBoxWrapper1 .findImgId-xs{
+            width:200px;
+            height:200px;
+            position:absolute;
+            top:-200px;
+         }
+         .findBoxWrapper1 .findImgPw-xs{
+            width:150px;
+            height:150px;
+            position:absolute;
+            bottom:-200px;
+         }
+         .findNone-xs{
+            display:none;
+         }
+         .findAStyle-xs{
+            border:1px solid #ddd;
+            border-bottom-width: 0;
+            border-radius: 20px 0 0 0;
+         }
+         .findBack-xs{
+            display:block;
+            clear:left;
+            width:100%;
+            background-color:#ddd;
+         }
+         .findLoginBox-xs input{
+            margin:0 20px 0 0;
+            width:50%;
+         }
+         .findLoginBox-xs button{
+            width:50%;
+            height:50%;
+         }
+         .findSlider{
+            -webkit-transform: translateX(0);
+         }
+         .findSliderRe{
+            -webkit-transform: translateX(0);
+         }
+      }

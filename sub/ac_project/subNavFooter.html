@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://use.fontawesome.com/beffbe80a6.js"></script>
+	<script type="text/javascript" src = "js/jquery-1.12.3.js"></script>
+	<!--네비게이션 푸터 외부 CSS 링크-->
+	<link rel="stylesheet" href="css/navFooterCss.css"/>
+
+</head>
+<body>
+	<div id="wrap">
+	<!--상단메뉴-->
+		<div id="nav">
+			<div class="navCenter">
+			  <div class="navMiddle">
+				<ul>
+					<li><a href="">HOME</a></li>
+					<li><a href="">GALLERY</a></li>
+					<li><a href="">MEMBER</a></li>
+					<li><a href="">CONTACT</a></li>
+					<li><a href="">JOIN</a></li>
+					<li><a href="">LOGIN</a></li>
+				</ul>
+				</div> 
+			</div>
+		</div>
+	<!-- 슬라이드 메뉴 -->
+		<div id="navSlideContainer">
+			<div class="navSlideWrapper">
+				<div class="slideNavMenu">
+					<div class="slideNavIn">
+					<div class="navMenu">
+						<ul>
+							<li><a href="javascript:" class="fa fa-angle-right"> HOME</a></li>
+							<li><a href="javascript:" class="fa fa-angle-right"> GALLERY</a></li>
+							<li><a href="javascript:" class="fa fa-angle-right"> MEMBER</a></li>
+							<li><a href="javascript:" class="fa fa-angle-right"> CONTACT</a></li>
+							<li><a href="javascript:" class="fa fa-angle-right"> JOIN</a></li>
+							<li><a href="javascript:" class="fa fa-angle-right"> LOGIN</a></li>
+						</ul> 
+					</div>
+						<button id="myBtnClose" class="fa fa-times"></button>
+					</div>
+				</div>
+			</div>
+			<!--슬라이드 menuBt-->
+			<div id="slideBtFix">	
+				<div class="slideBt">
+					<button id="myBtn" class="fa fa-bars"></button>
+				</div>
+			</div>		
+		</div>
+		<div id="content">
+         
+      </div>        
+		<!--푸터-->
+		<div id="mainFooter">
+         <div class="footerBox">
+            <div class="footerTextBox">
+               <div class="add">서울특별시 강남구 역삼동 819-10 세경빌딩 3층</div>
+               <div class="copy">COPYRIGHT(C) . ALL RIGHTS RESERVED.</div>
+            </div>
+         </div>
+      </div>
+	</div>
+	
+<!--슬라이드 메뉴 script-->
+<script type="text/javascript">
+	$("#myBtn").click(function () {
+			$(".navSlideWrapper").removeClass("marginLeft marginRigt")
+			$(".navSlideWrapper").addClass("marginLeft");
+		})
+	$("#myBtnClose").click(function(){
+		$(".navSlideWrapper").toggleClass("marginRigt");
+	})
+
+</script>
+</body>
+</html>

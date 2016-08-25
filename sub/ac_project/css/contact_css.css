@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+		/* -------- 상단 -------- */
+	body{
+		margin: 0;
+	}
+	.header{
+		margin: 0;
+		padding: 0;
+	}
+
+	*{
+			/* chorme, safari, 대부분의 mobile web browser*/
+			-webkit-box-sizing: border-box; /* mobile web browser
+
+			/* firefox */
+			-moz-box-sizing: border-box;
+
+			/* vendor prefix 를 안붙여도 되는 브라우저*/
+			box-sizing: border-box;
+		}
+	#two{
+		width: 1350px;
+		height: 550px;
+		/* 배경에 관련된 속성을 한줄로 표현하면 */
+		background: url("../img/back2.jpg") no-repeat fixed 50% 50%;
+		background-size: 100%;
+		}
+
+	@media (max-width:768px){
+		#two{
+			background-size: 210%;
+			}}
+
+	.content{
+		width: 100%;
+		height: 400px;
+		margin: 0 auto;
+		text-align: center;	
+		background: url("../img/back2.jpg") center center no-repeat fixed;
+		background-size: 100%;
+		background-repeat: repeat;
+	}
+
+	@media (max-width:768px){
+		.content{
+			background-size: 210%;
+			}}
+
+	.content #middleContent{
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 58px;
+		text-align: center;
+		font-size: 50pt;
+		font-weight: bold;
+		color: #000;
+		font-family: "helvetica";	
+
+	}
+	@media (min-width: 560px) and (max-width:768px){
+		.content #middleContent{
+			font-size: 40pt;
+			}}
+	@media (min-width: 300px) and (max-width:560px){
+		.content #middleContent{
+			font-size: 30pt;
+			}}
+
+	.content .middle{
+		width: 73%;
+		text-align: center;
+		margin: 70px auto;
+		height: 200px;
+		border: 10px solid #000;
+	}
+	
+	.endbox{
+		width: 100%;
+		height: 50px;
+		background-color: gray;
+		display: table;
+	}
+	.endbox p{
+		color: #eee;
+		text-align: center;
+		vertical-align: middle;
+		font-style: italic;
+		letter-spacing: 0.2em;
+		font-size: 10pt;
+		font-weight: 500;
+		display: table-cell;
+	}
+
+
+	/* -------map --------- */
+	.map { 
+		 /* height: 100%;  IE에서 지도위치가 브라우저 하단에 고정되는 현상 발생해서 삭제 (2013-05-16)  */ 
+		  margin: 0 auto; 
+		  width: 100%;
+		  padding: 0; 
+		} 
+
+		#map-canvas, #map_canvas { 
+		  margin: 0 auto;
+		  width : 1350px; /* 구글 지도 넓이 */ 
+		  height: 400px; /* 구글 지도 높이 */ 
+		  font-size:12px; 
+		} 
+
+		/* 말풍선관련 css 시작 */ 
+		.map_Heading { /* 말풍선 타이틀(회사명) css */ 
+		  line-height:30px; 
+		  font-size:20px; 
+		  font-weight:bold; 
+		  color: #000; 
+		} 
+
+		.map_Content { /* 말풍선 내용 css */ 
+		  font-size:10px; 
+		  color:gray; 
+		} 
+
+		/* 말풍선 회사홈페이지 링크 css */ 
+		a:link.map_Content    { text-decoration: none; color: #333; } 
+		a:active.map_Content  { text-decoration: none; color: #333; } 
+		a:visited.map_Content { text-decoration: none; color: #333; } 
+		a:hover.map_Content  { text-decoration: none; color: #A2002E; } 
+		/* 말풍선관련 css 끝 */ 
+
+		@media print { 
+		  .map { 
+		    height: auto; 
+		  } 
+		  #map_canvas { 
+		    height: 650px; 
+		  } 
+		} 
+
+
+
+		/* ------- get in touch 반응형 ---------- */
+		*{	
+			/* chorme , safari, 대부분의 mobile web browser*/
+			-webkit-box-sizing: border-box;  /* default : content-box*/
+			/* firefox  */
+			-moz-box-sizing: border-box;
+			/* vendor prefix 를 안붙여도 되는 브라우져  */
+			box-sizing: border-box;
+		}
+		.row{
+			width: 100%;
+			margin: 0 auto;
+			overflow: auto;
+			text-align: center;
+		}
+		/* .row 안에 float 된 요소때문에 다음 컨텐츠가 영향을 받지 않도록 clear 하기 */
+		.row:before, .row:after{
+			display: table;
+			content: " ";
+		}
+		.row:after{
+			clear: both;
+		}
+
+		.col-xs-1, .col-xs-2{
+			float: left;
+		}
+
+		.col-xs-1{
+			width: 50%;
+		}
+		.col-xs-2{
+			width: 100%;
+		}
+		
+		@media (min-width: 960px){
+			.col-sm-1, .col-sm-2{
+				float: left;
+			}
+			.col-sm-1{
+				width: 50%;
+			}
+			.col-sm-2{
+				width: 100%;
+			}
+		}
+		.row img{
+			max-width: 100%;
+		}
+
+
+				/* -----------본문 내용 ------------- */
+		.contactContent{
+			width: 70%;
+			margin: 30px auto;
+		}
+		.row{
+			width: 100%;
+			height: auto;
+			padding: 10% 0;
+			margin-top: 100px;
+			background-color: #eee;
+		}
+		.form{
+			width: 70%;
+			margin: 0 auto;
+			text-align-last: left;
+
+		}
+		#form1{
+			margin: 0 auto;
+			text-align: left;
+			border: none;
+			float: left;
+			font-weight: bold;
+			color: gray;
+			font-size: 12pt;
+			line-height: 25px;
+		}
+		#form1 input{
+			width: 300px;
+			height: 27px;
+			background-color: #fff;
+			border: 1px solid #cecece;
+			padding:0;
+		}
+		.form fieldset{
+			padding: 0;
+		}
+		
+		#form2 textarea{
+			width: 100%;
+			background-color: #fff;
+			border: 1px solid #cecece;
+		}
+		#form2{
+			text-align: left;
+			border-color: #fff;
+			float: left;
+			font-weight: bold;
+			font-size: 12pt;
+			line-height: 30px;
+		}
+		.sendBtn{
+			margin-top: 10px;
+			padding: 10px 20px 10px;
+			float: right;
+			width: 95px;
+			height: 35px;
+			background-color: gray;
+			text-align: center;
+			color: #fff;
+			border: none;
+			border-radius: 3pt;
+		}

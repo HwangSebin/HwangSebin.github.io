@@ -1,0 +1,199 @@
+@charset "utf-8";
+		html {
+		  position: relative;
+		  min-height: 100%;
+		}
+		body {
+ 		 /* Margin bottom by footer height */
+ 		  margin-bottom: 60px;
+		}
+	/*  네비 시작  */
+		#slideBtFix{
+			position: fixed;
+		}
+		#nav{
+			height: 55px;
+			background-color: #fff;
+			position: fixed;
+			opacity: 0.7;
+			top: 0;
+			left: 0;
+			width: 100%;
+			display: table;
+			z-index: 999;
+			border-bottom: 1px solid #eee;
+			-webkit-transition: all 0.4s ease-out;
+			transition: all 0.4s ease-out;
+		}
+		#nav:hover{
+			opacity: 1;
+		}
+		.navCenter{
+			display: table-cell;
+			vertical-align: middle;
+		}
+		
+		#nav a{
+			text-decoration: none;
+			color: #666;
+			font-size: 14px;
+			font-weight: bold;
+			-webkit-transition: all 0.4s ease-out;
+			transition: all 0.4s ease-out;
+		}
+		#nav a:hover{
+			color: #ddd;
+			text-decoration: line-through;
+		}
+		#nav .navMiddle ul{
+					padding : 0;
+					width: 810px;
+					margin: 0 auto;
+					display: block;
+		}
+		#nav ul li{
+			list-style-type: none;
+			float: left;
+			padding: 0px 28px;
+		}
+		#nav li{
+			font-size: 14px;
+			font-weight: 400;
+			letter-spacing: 5px;
+		}
+	/* 네비 끝 */
+	/* 반응형 mediaQuery */
+		@media(max-width: 767px){
+			#nav{
+			display:none;
+			}
+		}
+		@media(min-width: 767px){
+			#navSlideContainer{
+			display:none;
+			}
+		}
+	/* 슬라이드 네비 시작  */
+		.visible-xs{
+			display: none;
+		}
+		.navMenu{
+			margin : 60px 0 0 35px;
+		}
+		.navMenu a{
+			text-decoration: none;
+			color: #333;
+			-webkit-transition: all 0.4s ease-out;
+			transition: all 0.4s ease-out;
+		}
+		.navMenu a:hover{
+			color: #ddd;
+			text-decoration: line-through;
+		}
+		.navMenu ul {
+			padding: 0;
+			margin: 0;
+		}
+		.navMenu ul li{
+			list-style-type: none;
+			margin-bottom: 10px;
+		}
+		.navMenu li{
+			font-size: 14px;
+			font-weight: 400;
+			letter-spacing: 5px;
+		}
+		.slideBt{
+			position: absolute;
+			left: 10px;
+			top: 10px;
+		}
+		#myBtn{
+			border: 0;
+			background-color: #fff;
+			font-size: 20px;
+			padding:10px;
+			border-radius: 10px;
+			border: 1px solid #eee;
+			opacity: 0.8;
+			-webkit-transition: all 0.5s linear;
+			transition: all 0.5s linear;
+		}
+		#myBtnClose{
+			position: absolute;
+			top: 10px;
+			left: 156px;
+			border: 0;
+			background-color: #fff;
+			font-size: 20px;
+			padding:10px;
+			border-radius: 10px;
+			-webkit-transition: all 0.5s linear;
+			transition: all 0.5s linear;
+		}
+		#myBtn:hover{
+			cursor: pointer;
+			background-color: #ddd;
+			z-index: 996;
+		}
+		#myBtnClose:hover{
+			cursor: pointer;
+			opacity: 0.9;
+			background-color: #eee;
+			z-index: 998;
+		}
+		#navSlideContainer{
+			position: fixed;
+			z-index: 997;
+		}
+		.navSlideWrapper{
+			height: 9999px;
+			position: absolute;
+			-webkit-transition: all 0.5s ease-out;
+			transition: all 0.5s ease-out;
+			background-color: #eee;
+		}
+		.slideNavIn{
+			width: 200px;
+			height: 9999px;
+			background-color: #fff;
+			position: absolute;
+			top: 0;
+			left: -200px;
+			z-index: 999;
+		}
+		.marginLeft{
+			margin-left: 200px;
+		}
+		.marginRigt{
+			margin-left: -200px;
+		}
+		
+	/* 네비 끝 */
+
+	/* 푸터 시작*/
+		#mainFooter{
+			position: absolute;
+  			bottom: 0;
+			width: 100%;
+			height: 70px;
+			background-color: #fff;
+			display: table;
+			border-top: 1px solid #eee;
+		}
+		.footerBox{
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.footerTextBox{
+			text-align: center;
+		}
+		.add{
+			font-size: 13px;
+			margin-bottom: 4px;
+			color: #666;
+		}
+		.copy{
+			font-size: 11px;
+			color: #999;
+		}

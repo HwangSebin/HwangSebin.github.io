@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>find.html</title>
+   <script src="https://use.fontawesome.com/beffbe80a6.js"></script>
+   <script type="text/javascript" src = "js/jquery-1.12.3.js"></script>
+   <link rel="stylesheet" href="css/NavFooterCss.css"/>   
+   <link rel="stylesheet" href="css/idPwFindCss.css">
+   <style type="text/css">
+   
+   </style>
+</head>
+<body>
+   <div id="wrap">
+      <div id="nav">
+			<div class="navCenter">
+		        <div class="navMiddle">
+			        <ul>
+			          <li><a href="00main.html">HOME</a></li>
+			          <li><a href="02gallery.html">GALLERY</a></li>
+			          <li><a href="03member.html">MEMBER</a></li>
+			          <li><a href="04contact.html">CONTACT</a></li>
+			          <li><a href="05join.html">JOIN</a></li>
+			          <li><a href="06login.html">LOGIN</a></li>
+			        </ul>
+		        </div> 
+		      </div>
+		</div>
+   <!-- 슬라이드 메뉴 -->
+      <div id="navSlideContainer">
+			<div class="navSlideWrapper">
+				<div class="slideNavMenu">
+					<div class="slideNavIn">
+					<div class="navMenu">
+						<ul>
+							<li><a href="00main.html" class="fa fa-angle-right"> HOME</a></li>
+							<li><a href="02gallery.html" class="fa fa-angle-right"> GALLERY</a></li>
+							<li><a href="03member.html" class="fa fa-angle-right"> MEMBER</a></li>
+							<li><a href="04contact.html" class="fa fa-angle-right"> CONTACT</a></li>
+							<li><a href="05join.html" class="fa fa-angle-right"> JOIN</a></li>
+							<li><a href="06login.html" class="fa fa-angle-right"> LOGIN</a></li>
+						</ul> 
+					</div>
+						<button id="myBtnClose" class="fa fa-times"></button>
+					</div>
+				</div>
+			</div>
+			<!--슬라이드 menuBt-->
+			<div id="slideBtFix">	
+				<div class="slideBt">
+					<button id="myBtn" class="fa fa-bars"></button>
+				</div>
+			</div>		
+		</div>
+
+      <div id="Content">
+      	<div class="findContentBanner"></div>
+         <div class="findWrapper findWrapper-xs">
+            <div class="findIdNavi findAStyle-xs"><a href="#findBoxId" class="findFont-xs">Find ID</a></div>
+            <div class="findPwNavi findAStyle-xs"><a href="#FindBoxPw" class="findFont-xs">Get Password</a></div>
+
+            <div class="findIdBox findBox-xs findNone-xs">
+               <div class="findBoxWrapper1">
+                  <img class="findNone-xs" src="img/cube2.jpg"/>
+                  <div class="findIdImgTop"></div>                  
+                  <div class="findBoxWrapper2 findBoxId findFont-xs">
+                     <input type="radio" name="findIDBy" id="idByPhone" class="findFont-xs"/>회원정보에 등록한 휴대전화로 인증 <br/>
+                        <div class="byPhoneBox">
+                        <form>
+                           <label for="idName1" class="findFont-xs">이름</label>
+                           <input type="text" id="idName1" class="findFont-xs"/><br/>
+                           <label for="idPhone" class="findFont-xs">휴대전화</label>
+                           <input type="text" id="idPhone" class="findFont-xs"/>
+                           <button type="button" id="idConfirmBtn1" class="findFont-xs">인증번호받기</button><br/>
+                           <label for="idConfirm1" class="findFont-xs">인증번호입력</label>
+                           <input type="password" id="idConfirm1" class="findFont-xs"/>
+                           <button type="button" id="findIdBtn1" class="findFont-xs">인증완료</button><br/>
+                        </form>
+                        </div>                 
+                     <hr/>
+                     <input type="radio" name="findIDBy" id="idByMail" class="findFont-xs"/> 본인확인 이메일로 인증
+                        <div class="byMailBox">
+                        <form>
+                           <label for="idName2" class="findFont-xs">이름</label>
+                           <input type="text" id="idName2" class="findFont-xs"/><br/>
+                           <label for="idMail" class="findFont-xs">이메일주소</label>
+                           <input type="text" id="idMail" class="findFont-xs"/>
+                           <button type="button" id="idConfirmBtn2" class="findFont-xs">인증번호받기</button><br/>
+                           <label for="idConfirm2" class="findFont-xs">인증번호입력</label>
+                           <input type="password" id="idConfirm2" class="findFont-xs"/>
+                           <button type="button" id="findIdBtn2" class="findFont-xs">인증완료</button><br/>
+                        </form>
+                        </div>
+                  </div>
+               </div>
+            </div>            
+            <div class="findPwBox findBox-xs findNone-xs">
+               <div class="findBoxWrapper1">
+                  <img class="findNone-xs"src="img/cube2.jpg" />
+                  <div class="findPwImgTop"></div>
+                  <div class="findBoxWrapper2 findBoxPw">
+                     <p class="findProcess findFont-xs">1단계: 아이디입력</p>
+                     <p class="findFont-xs">2단계: 임시비밀번호 받기</p>
+                     <p class="findFont-xs">3단계: 로그인</p><br/>
+                     <div class="findPwProcess1">
+                     <form>
+                        <p class="findFont-xs">비밀번호를 찾고자 하는 아이디를 입력하세요.</p>
+                        
+                        <input type="text" class="findFont-xs" id="pwId" placeholder="아이디"/>
+                     </div><hr/>
+                     <div class="findPwProcess2 findFont-xs">
+                        <p class="findFont-xs">임시비밀번호를 받을 수단을 선택하세요</p>
+                        <br/>
+                     
+                        <input type="radio" name="findPwBy" id="pwByPhone" class="findFont-xs"/> 휴대전화로 전송 <br/>
+                           <div class="pwByPhoneBox">
+                              <select name="brand" id="phoneBrand">
+                                 <option value="SK" class="findFont-xs">SKT</option>
+                                 <option value="KT" class="findFont-xs">KT</option>
+                                 <option value="LG" class="findFont-xs">LG</option>
+                              </select>
+                              <input type="text" id="pwByPhoneNo" class="findFont-xs">
+                           </div>
+                        <input type="radio" name="findPwBy" id="pwByMail" class="findFont-xs"/> 메일주소로 전송 <br/>
+                           <div class="pwByMailBox">
+                              <input type="text" id="pwByMailAddr" class="findFont-xs">
+                           </div>
+                        </form>
+                     </div><hr/>
+                     <div class="findPwProcess3">
+                     <div class="findLoginBox findLoginBox-xs">
+                        <div class="loginWrapper1 findLoginBox-xs">
+                           <div class="loginWrapper2 findLoginBox-xs">
+                              <form>
+                                 <input type="text" id="loginUserId" class="findFont-xs findLoginBox-xs" placeholder="아이디"></input>
+                                 <button type="button" class="findFont-xs" id="loginBtn">로그인</button>
+                                 <input type="password" class="findFont-xs findLoginBox-xs" id="loginUserPwd" placeholder="비밀번호"></input>
+                              </form>
+                              <div class="findLoginSuccess">
+                                 <p><span>김구라</span>님</p>
+                                 <p>환영합니다.</p>
+                               </div>
+                           </div>
+                        </div>
+                     </div>
+                     </div>
+                     <div class="findPwProcessBtn">
+                        <button type="button" id="findPwPrevBtn" class="findFont-xs">이전단계</button>
+                        <button type="button" id="findPwNextBtn" class="findFont-xs">다음단계</button>
+                     </div>                  
+                  </div>
+               </div>
+            </div>
+            
+         </div>
+        
+      </div>
+         
+      <div id="mainFooter">
+			<div class="footerBox">
+				<div class="footerTextBox">
+					<div class="add">서울특별시 강남구 역삼동 819-10 세경빌딩 3층</div>
+					<div class="copy">COPYRIGHT(C) . ALL RIGHTS RESERVED.</div>
+				</div>
+			</div>
+		</div>
+   </div>
+   <script type="text/javascript">
+
+   localStorage.userId="acorn";
+   localStorage.userName="김구라";
+   localStorage.phoneNo=01012345678;
+   localStorage.confirmNo=1234;
+   localStorage.mailAddr="gura@acorn.com";
+   localStorage.userPwd=1111;
+   localStorage.securityCode=789100;
+
+   $("#myBtn").click(function () {
+         $(".navSlideWrapper").removeClass("marginLeft marginRigt")
+         $(".navSlideWrapper").addClass("marginLeft");
+      })
+   $("#myBtnClose").click(function(){
+      $(".navSlideWrapper").toggleClass("marginRigt");
+   })
+   $("#idByPhone").click(function(){
+      $(".byMailBox").slideUp();
+      $(".byPhoneBox").slideDown();
+      $("#idName1").focus();  
+   })
+   $("#idByMail").click(function(){
+      $(".byPhoneBox").slideUp();
+      $(".byMailBox").slideDown();
+      $("#idName2").focus();  
+   })
+  
+   $("input").keydown(function(){
+      $(this).removeClass("findInputError");
+   })
+
+   $("#idConfirmBtn1").click(function(){
+      $(".byPhoneBox input").removeClass("findInputError")
+      var idName1Result=$("#idName1").val();
+      var idPhoneResult=$("#idPhone").val();     
+      if(idName1Result==""){
+         alert("이름을 입력하세요.");
+         $("#idName1").focus().addClass("findInputError");
+      }else if(idPhoneResult==""){
+         alert("휴대폰번호를 입력하세요.")
+         $("#idPhone").focus().addClass("findInputError");
+      }else if(idName1Result!=localStorage.userName){
+         alert("가입되지 않은 이름입니다.")
+         $("#idName1").focus().addClass("findInputError");
+      }else if(parseInt(idPhoneResult)!=localStorage.phoneNo){
+         alert("가입된 휴대폰번호와 다릅니다.")
+         $("#idPhone").focus().addClass("findInputError");
+      }else{
+         alert("3분 이내에 휴대폰으로 전송된 인증번호 6자리를 입력하세요.")
+         $("#idConfirm1").focus();
+      }
+   });
+
+   $("#idConfirmBtn2").click(function(){
+      $(".byMailBox input").removeClass("findInputError")
+      var idName2Result=$("#idName2").val();
+      var idMailResult=$("#idMail").val();     
+      if(idName2Result==""){
+         alert("이름을 입력하세요.");
+         $("#idName2").focus().addClass("findInputError");
+      }else if(idMailResult==""){
+         alert("이메일주소를 입력하세요.")
+         $("#idMail").focus().addClass("findInputError");
+      }else if(idName2Result!=localStorage.userName){
+         alert("가입되지 않은 이름입니다.")
+         $("#idName2").focus().addClass("findInputError");
+      }else if(idMailResult!=localStorage.mailAddr){
+         alert("가입된 이메일주소와 다릅니다.")
+         $("#idMail").focus().addClass("findInputError");
+      }else{
+         alert("3분 이내에 이메일로 전송된 인증번호 6자리를 입력하세요.")
+         $("#idConfirm2").focus();
+      }
+   });
+
+   $("#findIdBtn1").click(function(){
+      var idConfirm1 = $("#idConfirm1").val();
+      if(idConfirm1!=localStorage.securityCode){
+         alert("인증번호를 다시 한번 확인해주세요")
+         $("#idConfirm1").focus().addClass("findInputError").val("");
+      }else{
+         alert("인증이 완료되었습니다. 가입하신 아이디는 \"acorn\" 입니다")
+      }
+   })
+   $("#findIdBtn2").click(function(){
+      var idConfirm2 = $("#idConfirm2").val();
+      if(idConfirm2!=localStorage.securityCode){
+         alert("인증번호를 다시 한번 확인해주세요")
+         $("#idConfirm2").focus().addClass("findInputError").val("");
+      }else{
+         alert("인증이 완료되었습니다. 가입하신 아이디는 \"acorn\" 입니다")
+      }
+   })
+      $("#idName1").keydown(function(event){
+      var code=event.keyCode;
+      if(code==13){
+         $("#idPhone").focus();
+      }
+   })
+   $("#idPhone").keydown(function(event){
+      var code=event.keyCode;
+      if(code==13){
+         $("#idConfirmBtn1").click();
+      }
+   })
+   $("#idName2").keydown(function(event){
+      var code=event.keyCode;
+      if(code==13){
+         $("#idMail").focus();
+      }
+   })
+   $("#idMail").keydown(function(event){
+      var code=event.keyCode;
+      if(code==13){
+         $("#idConfirmBtn2").click();
+      }
+   }) 
+   $("#idConfirm1").keydown(function(event){
+      var code=event.keyCode;
+      if(code ==13){
+        $("#findIdBtn1").click(); 
+      }
+   })
+   $("#idConfirm2").keydown(function(event){
+      var code=event.keyCode;
+      if(code ==13){
+        $("#findIdBtn2").click(); 
+      }
+   })
+    $(".findLoginSuccess").css("display","none");
+   $("#loginBtn").click(function(){
+      var userIdResult = $("#loginUserId").val();
+      var userPwdResult= $("#loginUserPwd").val();
+      console.log("(ID:"+userIdResult+", PWD:"+userPwdResult+")");
+         if(userIdResult==""){
+         alert("아이디를 입력하세요");
+         $("#loginUserId").addClass("findInputError");
+         $("#loginUserId").focus();
+         }else if(userPwdResult==""){
+            alert("비밀번호를 입력하세요");
+            $("#loginUserPwd").addClass("findInputError");
+            $("#loginUserPwd").focus();
+         }else if(userIdResult!=localStorage.userId){
+            alert("존재하지 않는 아이디입니다.");
+            $("#loginUserId").addClass("findInputError");
+            $("#loginUserId").focus();
+         }else if(userPwdResult!=localStorage.userPwd){
+            alert("비밀번호를 확인하신 후 다시 시도해주세요.")
+            $("#loginUserPwd").val("");
+            $("#loginUserId").removeClass("findInputError");
+            $("#loginUserPwd").addClass("findInputError");
+            $("#loginUserPwd").focus();
+         }else {
+            alert("로그인 되셨습니다!")
+            $("#loginUserPwd").blur().removeClass("loginFocused");
+            $("#loginUserId,#loginUserPwd").removeClass("findInputError");
+            $("#loginUserId,#loginUserPwd").val("");
+            $(".loginWrapper2 form").css("display","none");
+            $(".findLoginSuccess").css("display","block");
+         }
+   });
+   $("#loginUserId").keydown(function(event){
+      var code= event.keyCode;
+      var userIdResult = $("#loginUserId").val();
+      $("#loginUserId").removeClass("findInputError");
+      if(code == 13){
+         $(this).blur();
+         $("#loginUserPwd").focus();
+      }
+   })
+   $("#loginUserPwd").keydown(function(event){
+      var code=event.keyCode;
+      var userPwdResult= $("#loginUserPwd").val();
+      $("#loginUserPwd").removeClass("findInputError");
+      if(code ==13){
+         $(this).blur();
+         $("#loginBtn").click();
+      }
+   })
+
+
+   
+   var indexId=0;
+   var indexPw=0;
+   $(".findIdNavi a").click(function(){
+      indexId ++;
+      indexPw=0;
+      $(".findBoxWrapper1").removeClass("findSliderXRe findSliderRe")
+      $(".findPwNavi").removeClass("findNaviSelected");
+      $(".findPwBox").addClass("findNone-xs")
+      $(".findIdBox").removeClass("findNone-xs")
+      $(".findBack").removeClass("findBack-xs")
+      if(indexId%2 ==1){
+         $(".findIdNavi").addClass("findNaviSelected");
+         $(".findBoxWrapper1").removeClass("findSliderX");         
+         $(".findBoxWrapper1").addClass("findSlider");         
+      }
+      if(indexId%2 ==0){
+         $(".findIdNavi").removeClass("findNaviSelected");
+         $(".findBoxWrapper1").removeClass("findSlider");
+         $(".findBoxWrapper1").addClass("findSliderX"); 
+      }      
+      })
+
+   $(".findPwNavi a").click(function(){
+      indexPw ++;
+      indexId=0;
+      $(".findBoxWrapper1").removeClass("findSliderX findSlider")
+      $(".findIdNavi").removeClass("findNaviSelected");     
+      $(".findIdBox").addClass("findNone-xs")
+      $(".findPwBox").removeClass("findNone-xs")
+      $(".findBack").removeClass("findBack-xs")
+      $("#pwId").focus();
+      if(indexPw%2 ==1){
+         $(".findPwNavi").addClass("findNaviSelected");
+         $(".findBoxWrapper1").removeClass("findSliderXRe");
+         $(".findBoxWrapper1").addClass("findSliderRe");
+      }
+      if(indexPw%2 ==0){
+         $(".findPwNavi").removeClass("findNaviSelected");
+         $(".findBoxWrapper1").removeClass("findSliderRe");
+         $(".findBoxWrapper1").addClass("findSliderXRe"); 
+      }  
+   })
+
+   var findProcessIndex=0;
+   $("#findPwNextBtn").click(function(){
+      findProcessIndex ++;
+   if(findProcessIndex==0){
+      $(".findPwProcess3").hide();
+      $(".findPwProcess2").hide();
+      $(".findPwProcess1").slideDown();
+      $(".findBoxWrapper2>p:eq(2)").removeClass("findProcess")
+      $(".findBoxWrapper2>p:eq(1)").removeClass("findProcess")
+      $(".findBoxWrapper2>p:eq(0)").addClass("findProcess")
+   }
+   if(findProcessIndex==1){
+      if($("#pwId").val() == ""){
+         alert("비밀번호를 찾을 아이디를 입력하세요.")
+         $("#pwId").addClass("findInputError")
+         $("#pwId").focus();
+         findProcessIndex=0;
+         return;
+      }else if($("#pwId").val() != localStorage.userId){
+         alert("가입되지 않은 아이디입니다.")
+         $("#pwId").addClass("findInputError")
+         $("#pwId").focus();
+         findProcessIndex=0;
+         return;
+      }
+      $(".findPwProcess3").hide();
+      $(".findPwProcess2").slideDown();
+      $(".findPwProcess1").hide();
+      $(".findBoxWrapper2>p:eq(2)").removeClass("findProcess")
+      $(".findBoxWrapper2>p:eq(1)").addClass("findProcess")
+      $(".findBoxWrapper2>p:eq(0)").removeClass("findProcess")      
+   }
+   if(findProcessIndex==2){
+      var phoneNoResult = $("#pwByPhoneNo").val()
+      var mailAddrResult = $("#pwByMailAddr").val()
+         if(!$("#pwByPhone").is(":checked")&&!$("#pwByMail").is(":checked")){
+            alert("임시 비밀번호를 받을 수단을 선택하세요.")
+            findProcessIndex=1;
+            return;
+         }else if($("#pwByPhone").is(":checked")){
+            if(phoneNoResult == ""){
+               alert("휴대폰번호를 입력하세요.")
+               $("#pwByPhoneNo").addClass("findInputError")
+               $("#pwByPhoneNo").focus();
+               findProcessIndex=1;
+               return;
+            }else if(phoneNoResult.length<10){
+               alert("휴대폰번호가 너무 짧습니다. 번호를 확인하세요.")
+               $("#pwByPhoneNo").addClass("findInputError")
+               $("#pwByPhoneNo").focus();
+               findProcessIndex=1;
+               return;
+            }else if(phoneNoResult.length>11){
+               alert("휴대폰번호가 너무 깁니다. 번호를 확인하세요.")
+               $("#pwByPhoneNo").addClass("findInputError")
+               $("#pwByPhoneNo").focus();
+               findProcessIndex=1;
+               return;
+            }
+         }else if($("#pwByMail").is(":checked")){
+               if(mailAddrResult == ""){
+                  alert("메일주소를 입력하세요.")
+                  $("#pwByMailAddr").addClass("findInputError")
+                  $("#pwByMailAddr").focus();
+                  findProcessIndex=1;
+                  return;
+               }else if(mailAddrResult.length<10){
+	               alert("이메일주소가 너무 짧습니다. 다시한번 확인하세요.")
+	               $("#pwByMailAddr").addClass("findInputError")
+	               $("#pwByMailAddr").focus();
+	               findProcessIndex=1;
+	               return;
+            	}
+            }
+      $(".findPwProcess3").slideDown();
+      $(".findPwProcess2").hide();
+      $(".findPwProcess1").hide();
+      $(".findBoxWrapper2>p:eq(2)").addClass("findProcess")
+      $(".findBoxWrapper2>p:eq(1)").removeClass("findProcess")
+      $(".findBoxWrapper2>p:eq(0)").removeClass("findProcess")
+   }
+   if(findProcessIndex >= 3){
+      findProcessIndex = 2;
+      return;
+   }
+   })
+
+   $("#findPwPrevBtn").click(function(){
+      findProcessIndex --;
+      if(findProcessIndex==0){
+      $(".findPwProcess3").hide();
+      $(".findPwProcess2").hide();
+      $(".findPwProcess1").slideDown();
+      $(".findBoxWrapper2>p:eq(2)").removeClass("findProcess")
+      $(".findBoxWrapper2>p:eq(1)").removeClass("findProcess")
+      $(".findBoxWrapper2>p:eq(0)").addClass("findProcess")
+   }
+   if(findProcessIndex==1){
+      $(".findPwProcess3").hide();
+      $(".findPwProcess2").slideDown();
+      $(".findPwProcess1").hide();
+      $(".findBoxWrapper2>p:eq(2)").removeClass("findProcess")
+      $(".findBoxWrapper2>p:eq(1)").addClass("findProcess")
+      $(".findBoxWrapper2>p:eq(0)").removeClass("findProcess")
+   }
+   if(findProcessIndex==2){
+      $(".findPwProcess3").slideDown();
+      $(".findPwProcess2").hide();
+      $(".findPwProcess1").hide();
+      $(".findBoxWrapper2>p:eq(2)").addClass("findProcess")
+      $(".findBoxWrapper2>p:eq(1)").removeClass("findProcess")
+      $(".findBoxWrapper2>p:eq(0)").removeClass("findProcess")
+   }
+   if(findProcessIndex < 0){
+      findProcessIndex = 0;
+      return;
+   }
+   })
+
+   $("#pwId").keydown(function(event){
+      var code=event.keyCode;
+      if(code == 13){
+         var findProcessIndex=0;
+         $("#findPwNextBtn").click();
+      }
+   })
+   $("#pwByPhoneNo").keydown(function(event){
+      var code=event.keyCode;
+      if(code == 13){
+         var findProcessIndex=1;
+         $("#findPwNextBtn").click();
+      }
+   })
+   $("#pwByMailAddr").keydown(function(event){
+      var code=event.keyCode;
+      if(code == 13){
+         var findProcessIndex=1;
+         $("#findPwNextBtn").click();
+      }
+   }) 
+   $("#pwByPhone").click(function(){
+      $(".pwByMailBox").slideUp();
+      $(".pwByPhoneBox").slideDown(); 
+      $("#pwByPhoneNo").focus();
+   })
+   $("#pwByMail").click(function(){
+      $(".pwByPhoneBox").slideUp();
+      $(".pwByMailBox").slideDown(); 
+      $("#pwByMailAddr").focus();  
+   });
+  
+</script>
+</body>
+</html>
+<!--transition 다시 돌아오기-->

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>JoinForm.html</title>
+   <script src="https://use.fontawesome.com/beffbe80a6.js"></script>
+   <script type="text/javascript" src = "js/jquery-1.12.3.js"></script> 
+    <!--네비게이션 푸터 외부 CSS 링크-->
+   <link rel="stylesheet" href="css/navFooterCss.css"/>
+   <link rel="stylesheet" href="css/joinCss03.css"/>      
+</head>
+<body>
+   <div id="wrap">
+   <!--상단메뉴-->
+    <div id="nav">
+      <div class="navCenter">
+        <div class="navMiddle">
+        <ul>
+          <li><a href="00main.html">HOME</a></li>
+          <li><a href="02gallery.html">GALLERY</a></li>
+          <li><a href="03member.html">MEMBER</a></li>
+          <li><a href="04contact.html">CONTACT</a></li>
+          <li><a href="05join.html">JOIN</a></li>
+          <li><a href="06login.html">LOGIN</a></li>
+        </ul>
+        </div> 
+      </div>
+    </div>
+  <!-- 슬라이드 메뉴 -->
+    <div id="navSlideContainer">
+      <div class="navSlideWrapper">
+        <div class="slideNavMenu">
+          <div class="slideNavIn">
+          <div class="navMenu">
+            <ul>
+              <li><a href="00main.html" class="fa fa-angle-right"> HOME</a></li>
+              <li><a href="02gallery.html" class="fa fa-angle-right"> GALLERY</a></li>
+              <li><a href="03member.html" class="fa fa-angle-right"> MEMBER</a></li>
+              <li><a href="04contact.html" class="fa fa-angle-right"> CONTACT</a></li>
+              <li><a href="05join.html" class="fa fa-angle-right"> JOIN</a></li>
+              <li><a href="06login.html" class="fa fa-angle-right"> LOGIN</a></li>
+            </ul> 
+          </div>
+            <button id="myBtnClose" class="fa fa-times"></button>
+          </div>
+        </div>
+      </div>
+  <!--슬라이드 menuBt-->
+      <div id="slideBtFix"> 
+        <div class="slideBt">
+          <button id="myBtn" class="fa fa-bars"></button>
+        </div>
+      </div>    
+    </div>
+      <div id="content">
+        <div>
+            <h1 id="joinH1" style="font-size: 32px;">회원정보입력</h1>
+        </div>
+        <div class="joinTab">
+          <ul>
+            <li>
+                <p>Step01<br/>약관동의</p>
+            </li>
+            <li style="background-color: #5A95FD; color: #fff;">
+                <p>Step02<br/>회원정보입력</p>
+            </li>
+            <li>
+                <p>Step03<br/>회원가입완료</p>
+            </li>
+          </ul>
+        </div>
+        <div id="joinFormP01">
+            <legend style="font-size: 18px;">회원정보입력</legend>
+            <span style="color:red; font-weight: bold;">* 표시된 항목은 필수 항목</span>이므로 반드시 입력하셔야 회원가입이 진행됩니다.
+            <div id="joinFormP02">
+              <form action="loginAction">
+              <div id="joinGroup">
+                    <div id="joinLabel">
+                     <label for="username">이름 <span style="color:red; font-weight: bold;">*</span></label>
+                    </div> 
+                    <div id="joinInput">
+                     <input type="text" name="username" id="username" style="width:30%">
+                    </div>
+              </div>
+
+              <div id="joinGroup">
+                <div id="joinLabel">
+                  <label for="userid">아이디 <span style="color:red; font-weight: bold;">*</span></label>
+                </div>
+                <div id="joinInput" style="height: 80px">
+                  <input type="text" name="userid" id="userid" style="width:30%">
+                  <button id="idCheck">중복확인</button>
+                  <br/>
+                  <span style="font-size:12px;">※ 첫 글자는 영문으로 4~11자까지 가능, 영문, 숫자와 특수기호( _ )만 사용 가능</span>
+                </div>
+              </div>
+             
+              <div id="joinGroup">
+                <div id="joinLabel">
+                  <label for="userpwd">비밀번호 <span style="color:red; font-weight: bold;">*</span></label>
+                </div> 
+                <div id="joinInput">
+                  <input type="text" name="userpwd" id="userpwd" style="width:30%">
+                </div> 
+              </div>
+                
+              <div id="joinGroup">
+                <div id="joinLabel">
+                  <label for="useremail">이메일</label>
+                </div>  
+                <div id="joinInput">
+                  <input type="text" name="useremail" id="useremail"> @
+                  <input type="text" name="useremail" id="useremail">
+                  <select name="useremail" id="useremail" style="width:20%" >
+                      <option value="">직접입력</option>
+                      <option value="">naver.com</option>
+                      <option value="">hanmail.net</option>
+                      <option value="">nate.com</option>
+                      <option value="">gmail.com</option>
+                      <option value="">daum.net</option>
+                      <option value="">hotmail.com</option>
+                  </select>
+                </div>  
+              </div>
+                
+              <div id="joinGroup">
+                 <div id="joinLabel" style="height: 90px;">
+                  <label for="useraddress">주소</label>
+                </div>   
+                <div id="joinInput" style="height: 90px;">
+                  <div>
+                   <input type="text" name="useraddress" id="useraddress" style="width:20%"> 
+                   <button id="idAddr">우편번호 검색</button> 
+                  </div>
+
+                  <div id="padding">
+                   <input type="text" name="useraddress" id="useraddress" style="width:66%">  
+                  </div>
+                </div>  
+              </div>
+               
+              <div id="joinGroup">
+                <div id="joinLabel">
+                  <label for="userphone">휴대전화</label>
+                </div>     
+                <div id="joinInput">
+                  <select name="userphone" id="userphone" style="width:20%">
+                     <option value="">선택</option>
+                     <option value="">010</option>
+                     <option value="">011</option>
+                     <option value="">016</option>
+                     <option value="">017</option>
+                  </select>
+                  - <input type="text" name="userphone" id="userphone">
+                  - <input type="text" name="userphone" id="userphone">
+                </div>
+               
+              </div>
+              </form>
+            </div>
+                         
+          <div class="joinBtn">
+             <button id="joinBtn01"><a href="05joinOk.html">가입하기</a></button>
+          </div>
+         </form>
+        </div>
+      </div>
+      <!--푸터-->
+    <div id="mainFooter">
+         <div class="footerBox">
+            <div class="footerTextBox">
+               <div class="add">서울특별시 강남구 역삼동 819-10 세경빌딩 3층</div>
+               <div class="copy">COPYRIGHT(C) . ALL RIGHTS RESERVED.</div>
+            </div>
+         </div>
+      </div>
+   </div>
+<script type="text/javascript" src="js/jquery-1.12.3.js"></script>   
+<script>
+   $("#idCheck").click(function(){
+      
+      var inputId=$("input[name=userid]").val();
+      if(inputId == ("asdf" || "zxcv" || "qwer")){
+         alert("이미 사용중이거나 탈퇴한 아이디입니다.");
+         $("input[name=userid]").addClass("error").focus();
+      }else {
+        alert("사용가능합니다.");
+        return false;
+      }
+   });
+   
+   $("#idAddr").click(function(){
+      alert("아직 못해요..")
+      return false;
+   });
+
+   $("#joinBtn").click(function(){
+      var inputName=$("input[name=username]").val();
+      if(inputName==""){
+         alert("이름을 입력하세요");
+         $("input[name=username]").addClass("error").focus();
+         return false;
+      }
+
+      var inputId=$("input[name=userid]").val();
+      if(inputId==""){
+         alert("아이디를 입력하세요");
+         $("input[name=userid]").addClass("error").focus();
+         return false;
+      }
+
+      var inputPwd=$("input[name=userpwd]").val();
+      if(inputPwd==""){
+         alert("비밀번호를 입력하세요");
+         $("input[name=userpwd]").addClass("error").focus();
+         return false;
+      }
+    });
+
+   $("input[name=username").blur(function(){
+      var inputName=$(this).val();
+      if(inputName != ""){
+         $(this).removeClass("error").addClass("success")
+      }else{
+         $(this).removeClass("success").addClass("error")
+      }
+   });
+
+
+   $("input[name=userid").blur(function(){
+      var inputId=$(this).val();
+      if(inputId != ""){
+         $(this).removeClass("error").addClass("success")
+      }else{
+         $(this).removeClass("success").addClass("error")
+      }
+   });
+
+    $("input[name=userpwd").blur(function(){
+      var inputPwd=$(this).val();
+      if(inputPwd != ""){
+         $(this).removeClass("error").addClass("success")
+      }else{
+         $(this).removeClass("success").addClass("error")
+      }
+   });
+</script>
+<!--슬라이드 메뉴 script-->
+<script type="text/javascript">
+  $("#myBtn").click(function () {
+      $(".navSlideWrapper").removeClass("marginLeft marginRigt")
+      $(".navSlideWrapper").addClass("marginLeft");
+    })
+  $("#myBtnClose").click(function(){
+    $(".navSlideWrapper").toggleClass("marginRigt");
+  })
+
+</script>
+</body>
+</html>

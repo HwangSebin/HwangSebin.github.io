@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+/*  약관동의  */
+   @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+   font-family: 'Nanum Gothic', sans-serif;
+     *{
+        /* chorme, satari, 대부분의 mobilex web browser */
+        -webkit-box-sizing: border-box; /* default : content-box */
+        /* firefox */
+        -moz-box-sizing: border-box;
+        /* vender prefix를 안붙여도 되는 브라우져 */
+        box-sizing: border-box;
+      }
+    body{
+      margin: 0;
+    }
+    .joinTab{
+      overflow: auto;
+    }
+    /* .row안에 float된 요소때문에 다음 컨텐츠가 영향을 받지 않도록 clear하기 */
+    .joinTab:before, .joinTab:after{
+      display: table;
+      content: " ";
+    }
+    .joinTab:after{
+      clear: both;
+    }
+    .col-xs-1, .col-xs-2, .col-xs-3{
+      float: left;
+    }
+    .col-xs-1{
+      width: 33.333%;
+    }
+    .col-xs-2{
+      width: 100%;
+    }
+    .col-xs-3{
+      width: 100%;
+    }
+    
+    @media (min-width: 768px){
+      .col-sm-1, .col-sm-2, .col-sm-3{
+        float: left;
+        border:1px solid green;
+      }
+      .col-sm-1{
+        width: 33.333%;
+      }
+      .col-sm-2{
+        width: 100%;
+      }
+      .col-sm-3{
+        width: 100%;
+      }
+      
+    }
+
+      #wrap{
+         width: 100%;
+         margin: 0 auto;
+      }
+
+      #content {
+         width: 100%;
+         padding-top: 80px;
+         padding-bottom: 100px;
+      }
+
+      #joinH1{
+         text-align: center;
+         color: #333;
+      }
+      .joinAgree{
+        width: 100%; 
+        overflow: hidden;
+      }
+      .joinAgreeBox{
+         height: 200px; 
+         padding: 0 40px; 
+         border: 1px #ccc solid; 
+         overflow-y: auto; 
+         position: relative;
+      }
+       .joinAgreeBox02{
+         height: 130px; 
+         padding: 0 40px; 
+         border: 1px #ccc solid; 
+         overflow-y: auto; 
+         position: relative;
+      }
+      .joinHtit{
+         color: #333; 
+         font-size: 16px; 
+         font-weight: bold; 
+      }
+      .joinTit{
+         color: #333; 
+         font-size: 14px; 
+         font-weight: bold; 
+         padding-bottom: 10px;
+      }
+      .joinTxt{
+        color: #777; 
+        font-size: 14px; 
+        line-height: 18px;
+        padding-bottom: 5px;
+      }
+      .joinCheck{
+        color: #777; 
+        font-size: 14px; 
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 50px;
+      }
+      .joinAgreeBox02 li{
+        color: #777; 
+        font-size: 14px; 
+      }
+      .joinTab{
+        width: 100%;
+        margin-top: 50px;
+      }
+      .joinTab ul{
+        width: 100%;
+        list-style-type: none;
+        padding: 0;
+        overflow: auto;
+      }
+      .joinTab li{
+        width: 33%;
+        height: 80px;
+        border: 1px solid #ccc;
+        float: left;
+        text-align: center;
+        font-weight: bold;
+        color: #666;
+        font-size: 17px;
+      }
+      .joinForm{
+        clear: both;
+        margin-top: 50px;
+      }
+      #joinArgeeBtn{
+        position: absolute;
+        top: 50px;
+        right: 40px;
+      }
+       #joinBtn01{
+         background-color: #5A95FD;
+         border: 1px solid #4E89F0;
+         color: #fff;
+         border-radius: 4px;
+         font-size: 18px;
+         text-align: center;
+         padding: 10px 20px;
+      }
+      #joinBtn01 a{
+        text-decoration: none;
+        color: #fff;
+      }
