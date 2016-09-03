@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="author" contents="HwangSebin">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,12 +15,18 @@
     <link rel="stylesheet" href="css/about.css">
     <script src="js/jquery-1.12.3.js"></script>
     <script type="text/javascript" src="js/nav.js"></script>
-	<title>LUCETE</title>
-	<style>
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script type="text/javascript" src="js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script type="text/javascript" src="js/subScroll.js"></script>
+    <title>LUCETE</title>
+    <style>
+
     </style>
 </head>
+
 <body>
-	    <div id="warp" class="wrapper">
+    <div id="warp" class="wrapper">
         <!-- 기본메뉴 시작 -->
         <header class="navBar">
             <div class="navBarvertical">
@@ -31,10 +38,9 @@
                 <div class="navBarWrapList">
                     <nav class="navList">
                         <ul>
-                            <li><a href="index.html">PROJECT</a></li>
                             <li><a href="javascript:">WEB PUBLISHING</a></li>
                             <li><a href="javascript:">WEB DESIGN</a></li>
-                            <li><a href="javascript:">ABOUT</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -45,8 +51,10 @@
         <header class="navBarMini">
             <div class="navBarMiniWrap row">
                 <div class="navMiniList col-xs-12">
-                    <div class="col-xs-9">
-                        <span class="navBarTitle">LUCETE</span>
+                    <div class="col-xs-9 navBarWrapTitle">
+                        <a href="index.html">
+                            <span class="navBarTitle">LUCETE</span>
+                        </a>
                     </div>
                     <div class="col-xs-3 navMiniIcon">
                         <div class="hambox">
@@ -58,18 +66,33 @@
                 </div>
                 <div class="navMiniListTap col-xs-12">
                     <ul>
-                        <li><a href="index.html">PROJECT</a></li>
                         <li><a href="javascript:">WEB PUBLISHING</a></li>
                         <li><a href="javascript:">WEB DESIGN</a></li>
-                        <li><a href="javascript:">ABOUT</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
                     </ul>
                 </div>
             </div>
         </header>
         <!-- 햄버거 메뉴 끝 -->
-		<div class="aboutContentWrap">
-			
-		</div>
+        <div class="aboutContentWrap">
+            <div class="topWrap">
+                <div id="subBackgroundWrap" class="subBackground">
+                    <div style="background-image: url(img/about_img.jpg);">
+                    </div>
+                </div>
+                <div class="txtWrap">
+                    <span class="txtTltle">ABOUT</span>
+                </div>
+                <div class="scroll">
+                    <h6 class="robotoregular">SCROLL</h6>
+                    <div class="scrollbar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentWrap">
+                <div class="contentboxWrap">
+                </div>
+            </div>
         <footer class="footer">
             <div class="footerWrap">
                 <div class="footerTxt robotoThin">
@@ -80,6 +103,7 @@
                 </div>
             </div>
         </footer>
-        </div>
+    </div>
 </body>
+
 </html>
