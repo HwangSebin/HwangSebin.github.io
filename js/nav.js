@@ -47,13 +47,13 @@ $(document).ready(function () {
         var that = $(this);
         if (that.hasClass("is-open")) {
             that.removeClass("is-open").addClass("is-closed");
-            $(".navMiniListTap").slideUp(200);
+            $(".navMiniListTap").slideUp(300);
             $("body").animate({
                 paddingTop: "90px"
             }, 300);
         } else {
             that.removeClass("is-closed").addClass("is-open");
-            $(".navMiniListTap").slideDown(200);
+            $(".navMiniListTap").slideDown(300);
             $("body").animate({
                 paddingTop: "315px"
             }, 300);

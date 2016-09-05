@@ -125,7 +125,13 @@ body {
     font-size: 3em;
     color: #999;
 }
-
+.ion-ios-person-outline{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 3em;
+    color: #999;
+}
 .ion-ios-monitor-outline {
     display: table-cell;
     vertical-align: middle;

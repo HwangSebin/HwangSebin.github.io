@@ -6,21 +6,16 @@ body {
     transition: top 0.2s ease-in-out;
 }
 
-.montserrat {
-    font-family: 'Montserrat', sans-serif;
-}
-
 .robotoThin {
     font-family: 'Roboto-Thin';
 }
 
-.rixM {
-    font-family: 'RixSGo M';
-    font-weight: bold;
+.robotoregular {
+    font-family: 'Roboto-Regular';
 }
 
-.rixL {
-    font-family: 'RixSGo L';
+.rixM {
+    font-family: 'RixSGo M';
 }
 
 .aboutContentTopWrap {
@@ -46,6 +41,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .txtTltle {
@@ -80,30 +76,5 @@ body {
 .contentboxWrap {
     width: 100%;
     height: 300px;
-    border-top: 1px solid #e0e1e2;
-    display: block;
-    position: relative;
-}
-
-.aboutBoxTitle {
-    display: inline-block;
-    width: 39%;
-    padding: 50px 0;
-    box-sizing: border-box;
-}
-
-.titleUp {
-    text-transform: uppercase;
-}
-
-.aboutNum {
-    line-height: 0px;
-    color: #999;
-}
-
-.aboutBoxBody {
-    padding: 50px 0;
-    display: inline-block;
-    width: 60%;
-    color: #898989;
+    background-color: #333;
 }
