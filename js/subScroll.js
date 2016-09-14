@@ -18,7 +18,6 @@ $(document).ready(function() {
                 y: "70%",
                 ease: Linear.easeNone
             })
-            .addIndicators()
             .addTo(controller);
     }
 })

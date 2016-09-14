@@ -8,7 +8,7 @@
     <title>Lucete</title>
     <link rel="stylesheet" href="../css/nomalize.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Taviraj"| href="http://api.typolink.co.kr/css?family=RixSGo+L:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Taviraj" | href="http://api.typolink.co.kr/css?family=RixSGo+L:400" rel="stylesheet">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/ionicons.min.css">
     <link rel="stylesheet" href="../css/sub.css">
@@ -19,6 +19,7 @@
     <script type="text/javascript" src="../js/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script type="text/javascript" src="../js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
     <script type="text/javascript" src="../js/subScroll.js"></script>
+    <script type="text/javascript" src="../js/jquery.lazy.min.js"></script>
 </head>
 
 <body>
@@ -35,8 +36,8 @@
                 <div class="navBarWrapList">
                     <nav class="navList">
                         <ul>
-                            <li><a href="javascript:">WEB PUBLISHING</a></li>
-                            <li><a href="javascript:">WEB DESIGN</a></li>
+                            <li><a href="../pb.html">WEB PUBLISHING</a></li>
+                            <li><a href="../dg.html">WEB DESIGN</a></li>
                             <li><a href="../about.html">ABOUT</a></li>
                         </ul>
                     </nav>
@@ -61,8 +62,8 @@
                 </div>
                 <div class="navMiniListTap col-xs-12">
                     <ul>
-                        <li><a href="javascript:">WEB PUBLISHING</a></li>
-                        <li><a href="javascript:">WEB DESIGN</a></li>
+                        <li><a href="../pb.html">WEB PUBLISHING</a></li>
+                        <li><a href="../dg.html">WEB DESIGN</a></li>
                         <li><a href="../about.html">ABOUT</a></li>
                     </ul>
                 </div>
@@ -135,7 +136,11 @@
             </div>
             <div class="subContentImgContentsWrap">
                 <div class="subContentImgContents">
-                    <img src="../img/hj_sub_img1.png">
+                    <img class="lazy" data-src="../img/hj_sub_img_01.png">
+                    <img class="lazy" data-src="../img/hj_sub_img_02.png">
+                    <img class="lazy" data-src="../img/hj_sub_img_03.png">
+                    <img class="lazy" data-src="../img/hj_sub_img_04.png">
+                    <img class="lazy" data-src="../img/hj_sub_img_05.png">
                 </div>
             </div>
             <footer class="footer">
@@ -150,6 +155,13 @@
             </footer>
         </div>
         <!-- Wrapper 끝 -->
+        <script>
+        $('.lazy').lazy({
+          effect: "fadeIn",
+          effectTime: 2000,
+          threshold: 0
+        });
+        </script>
 </body>
 
 </html>

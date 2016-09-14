@@ -164,7 +164,8 @@ body {
     background-color: #e5e5e5;
     text-align: center;
 }
-.subContentImgContents img{
+.lazy{
+    display: block;
     max-width: 100%;
 }
 .subBodyTxtContent{
