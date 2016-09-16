@@ -32,10 +32,13 @@ $(document).ready(function () {
         if (st > lastScrollTop && st > navbarHeight) {
             // Scroll Down
             $(".navBar,.navBarMini").removeClass('nav-down').addClass('nav-up');
+            $(".navMiniListTap").removeClass('navMiniListDown').addClass('navMiniListUp');
+            
         } else {
             // Scroll Up
             if (st + $(window).height() < $(document).height()) {
                 $(".navBar,.navBarMini").removeClass('nav-up').addClass('nav-down');
+                $(".navMiniListTap").removeClass('navMiniListUp').addClass('navMiniListDown');
             }
         }
         //현재 스크롤 위치를 지정
@@ -55,7 +58,7 @@ $(document).ready(function () {
             that.removeClass("is-closed").addClass("is-open");
             $(".navMiniListTap").slideDown(300);
             $("body").animate({
-                paddingTop: "315px"
+                paddingTop: "261px"
             }, 300);
         }
     });
