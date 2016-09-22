@@ -58,7 +58,11 @@ body {
     line-height: 70px;
     padding-bottom: 26px;
 }
-
+.dgSubTitleTxt{
+    font-size: 5em;
+    line-height: 70px;
+    padding-bottom: 26px;
+}
 .subBodyBtnWrap>button {
     width: 300px;
     height: 45px;
@@ -189,6 +193,9 @@ body {
 @media(max-width: 768px) {
     .teamWrap {
         margin-bottom: 20px;
+    }
+    .dgSubTitleTxt{
+        font-size: 4em;
     }
 }
 
