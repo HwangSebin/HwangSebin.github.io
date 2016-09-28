@@ -6,6 +6,9 @@ body {
     transition: top 0.2s ease-in-out;
 }
 
+.col-xs-12 {
+    padding: 0;
+}
 .robotoThin {
     font-family: 'Roboto-Thin';
 }

@@ -8,7 +8,9 @@ body {
     transition: top 0.2s ease-in-out;
     font-family: 'Taviraj', serif;
 }
-
+.col-xs-12 {
+    padding: 0;
+}
 .robotoThin {
     font-family: 'Roboto-Thin'
 }
@@ -188,6 +190,10 @@ body {
 .smallTxt{
     font-size: 11px;
     color: #999;
+}
+
+.col-xs-12 {
+    padding: 0;
 }
 
 @media(max-width: 768px) {
