@@ -1,199 +1,26 @@
 @charset "utf-8";
 
 body {
-    padding-top: 90px;
-    -webkit-transition: top 0.2s ease-in-out;
-    transition: top 0.2s ease-in-out;
-    font-family: 'Taviraj', serif;
-}
-.robotoThin {
-        font-family: 'Roboto-Thin'
-    }
-
-/*컨텐츠 시작*/
-
-.col-xs-12 {
-    padding: 0;
+    font-family: "Lato","Noto Sans", sans-serif;
 }
 
-.contensBoxWrap {
+.wrapper {
     width: 100%;
-    height: 450px;
-    overflow: hidden;
-    margin-bottom: 6px;
-}
-
-.contentsBox {
+    height: 100%;
     position: relative;
-    width: 100%;
-    height: 450px;
-    display: table;
-    background: url("../img/dr_bg.jpg") no-repeat;
-    transform-origin: center center 0px;
-    -webkit-transition: all 1.5s ease;
-    -moz-transition: all 1.5s ease;
-    -o-transition: all 1.5s ease;
-    transition: all 1.5s ease;
 }
-
-.contentsBox:hover {
-    -webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 12);
-    transform: scale(1.2, 1.2);
+.top{
+	width: 100%;
+	position: relative;
 }
-
-.contentsBox2 {
-    position: relative;
-    width: 100%;
-    height: 450px;
-    display: table;
-    background: url("../img/hj_bg.jpg") no-repeat;
-    transform-origin: center center 0px;
-    -webkit-transition: all 1.5s ease;
-    -moz-transition: all 1.5s ease;
-    -o-transition: all 1.5s ease;
-    transition: all 1.5s ease;
+#navWrap{
+	width: auto;
+	position: absolute;
+	left: 5%;
 }
-
-.contentsBox2:hover {
-    -webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 12);
-    transform: scale(1.2, 1.2);
+#navWrap>div{
+	display: inline-block;
 }
-
-.contentsBox3 {
-    position: relative;
-    width: 100%;
-    height: 450px;
-    display: table;
-    background: url("../img/ad_bg.jpg") no-repeat;
-    transform-origin: center center 0px;
-    -webkit-transition: all 1.5s ease;
-    -moz-transition: all 1.5s ease;
-    -o-transition: all 1.5s ease;
-    transition: all 1.5s ease;
-}
-
-.contentsBox3:hover {
-    -webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 12);
-    transform: scale(1.2, 1.2);
-}
-
-.contentsBox4 {
-    position: relative;
-    width: 100%;
-    height: 450px;
-    display: table;
-    background: url("../img/mp_bg.jpg") no-repeat;
-    transform-origin: center center 0px;
-    -webkit-transition: all 1.5s ease;
-    -moz-transition: all 1.5s ease;
-    -o-transition: all 1.5s ease;
-    transition: all 1.5s ease;
-}
-
-.contentsBox4:hover {
-    -webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 12);
-    transform: scale(1.2, 1.2);
-}
-
-.contentsBox5 {
-    position: relative;
-    width: 100%;
-    height: 450px;
-    display: table;
-    background: url("../img/bc_bg.jpg") no-repeat;
-    transform-origin: center center 0px;
-    -webkit-transition: all 1.5s ease;
-    -moz-transition: all 1.5s ease;
-    -o-transition: all 1.5s ease;
-    transition: all 1.5s ease;
-}
-
-.contentsBox5:hover {
-    -webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 12);
-    transform: scale(1.2, 1.2);
-}
-
-.contentsBox6 {
-    position: relative;
-    width: 100%;
-    height: 450px;
-    display: table;
-    background: url("../img/sh_bg.jpg") no-repeat;
-    transform-origin: center center 0px;
-    -webkit-transition: all 1.5s ease;
-    -moz-transition: all 1.5s ease;
-    -o-transition: all 1.5s ease;
-    transition: all 1.5s ease;
-}
-
-.contentsBox6:hover {
-    -webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 12);
-    transform: scale(1.2, 1.2);
-}
-
-.contentsTxtWrap {
-    position: relative;
-    padding-left: 30px;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-
-.contentsTxt {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    display: table-cell;
-    vertical-align: middle;
-    color: #fff;
-}
-
-.typeTitle {
-    padding-bottom: 20px;
-    font-size: 1.1em;
-}
-
-.contentTitle {
-    font-size: 5.5em;
-    line-height: 70px;
-    padding-bottom: 10px;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-
-.subTitle {
-    font-size: 1.6em;
-    padding-bottom: 10px;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-
-.toolTitle {
-    font-size: 12px;
-}
-
-@media(max-width: 768px) {
-    .contentsTxtWrap {
-        padding: 0 15px;
-    }
-    .contentTitle {
-        font-size: 4.3em;
-        line-height: 60px;
-        padding-bottom: 8px;
-    }
-    .subTitle {
-        font-size: 1.3em;
-        padding-bottom: 10px;
-    }
+#navWrap>div:first-child{
+	margin-right: 10px;
 }
