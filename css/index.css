@@ -16,11 +16,44 @@ body {
 #navWrap{
 	width: auto;
 	position: absolute;
-	left: 5%;
+	left: 4%;
+	top: 43px;
 }
 #navWrap>div{
 	display: inline-block;
 }
 #navWrap>div:first-child{
 	margin-right: 10px;
+}
+.navTxt>a{
+	color: #777992;
+}
+.navTxt>a:hover{
+	color: #a0b1de;
+	text-decoration: line-through;
+}
+.navTxt>a:active{
+	color: #92a2cd;
+}
+.logoImg{
+	position: absolute;
+	top: 43px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.logoImg>img{
+	max-width: 70%;
+}
+.content{
+	position: relative;
+	top: 100px;
+}
+.listBox{
+	width: 92%;
+	margin: 0 auto;
+}
+.listGymWrap{
+	width: 100%;
+	height: 100%;
+	background-color: #f2ecdd;
 }

@@ -9,13 +9,12 @@
     <meta name="keywords" content="퍼블리셔,UI,Javascript,HTML,CSS,SASS,Jquery,nodeJs,Github">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>✨LUCETE✨</title>
-    <link rel="stylesheet" href="css/nomalize.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nomalize.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="http://withfitlanding.azurewebsites.net/Landing/NotoSans-subset-master/noto_font.css">
-    <script src="js/jquery-1.12.3.js"></script>
-    <script src="js/prefixfree.min.js"></script>
 </head>
 
 <body>
@@ -31,9 +30,31 @@
             </div>
         </header>
         <!--nav끝-->
-        <div class="contetnt">
+        <div class="content">
+            <ul class="bxslider">
+                <li>
+                    <div class="listBox">
+                        <div class="listGymWrap"> 1</div>
+                    </div>
+                </li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
         </div>
     </div>
+    <script src="js/jquery-1.12.3.js"></script>
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(window).resize(function() {
+            $(".content").css("height", $(window).height() - 100);
+            $(".listBox").css("height", $(window).height() - 165);
+        });
+        $('.bxslider').bxSlider();
+    });
+    </script>
 </body>
 
 </html>
