@@ -34,17 +34,12 @@
         <div class="content">
             <ul class="bxslider">
                 <li>
-                    <div class="listBox">
-                        <div class="listGymWrap">
-                            <img src="img/gym_img_01.png" alt="짐매니저 로고 이미지" class="listGymImg01 hc">
-                            <img src="img/gym_img_02.png" alt="짐매니저 텍스트" class="listGymImg02 hc">
-                        </div>
-                    </div>
+                    <div class="listBox">1</div>
                 </li>
-                <!-- <li>2</li>
+                <li>2</li>
                 <li>3</li>
                 <li>4</li>
-                <li>5</li> -->
+                <li>5</li>
             </ul>
         </div>
     </div>
@@ -53,7 +48,7 @@
     <script>
     $(document).ready(function() {
         $(window).resize(function() {
-            $(".content").css("height", $(window).height() - 100);
+            // $(".content").css("height", $(window).height() - 100);
             $(".listBox").css("height", $(window).height() - 165);
         });
         $('.bxslider').bxSlider();
