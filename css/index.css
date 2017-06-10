@@ -64,7 +64,7 @@ body {
     top: 100px;
 }
 .listBox{
-	width: 100%;
-	height: 100%;
+	width: 92%;
 	background-color: #ddd;
+	margin: 0 auto;
 }

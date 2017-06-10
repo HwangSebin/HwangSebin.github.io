@@ -34,12 +34,14 @@
         <div class="content">
             <ul class="bxslider">
                 <li>
-                    <div class="listBox">1</div>
+                    <div class="listBox list_01">
+                        
+                    </div>
                 </li>
-                <li>2</li>
+                <!-- <li>2</li>
                 <li>3</li>
                 <li>4</li>
-                <li>5</li>
+                <li>5</li> -->
             </ul>
         </div>
     </div>
@@ -47,8 +49,8 @@
     <script src="js/jquery.bxslider.js"></script>
     <script>
     $(document).ready(function() {
+        $('.listBox').css('height', $(window).height() - 165);
         $(window).resize(function() {
-            // $(".content").css("height", $(window).height() - 100);
             $(".listBox").css("height", $(window).height() - 165);
         });
         $('.bxslider').bxSlider();
