@@ -76,18 +76,24 @@ body {
 .list_01{
 	width: 92%;
 	background-image: url("../img/bg_01.png");
-	background-size: 100% cover;
+	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 }
 .listTitleBox{
 	position: absolute;
-	width: 700px;
+	width: 650px;
 	height: 200px;
 	right: 0;
 	background-color: #fff;
+	padding: 60px;
+}
+.listBox>.listTitleBox>.listTitleImgBox>img.gym_img_logo{
+	max-width: 80%;
+	width: 656px;
 }
 .listBox>.listTitleBox>.listTextBox{
+	margin-top: 10px;
 }
 .listBox>.listTitleBox>.listTextBox>div{
 	font-size: 1.2rem;

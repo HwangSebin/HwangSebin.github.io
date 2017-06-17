@@ -39,6 +39,9 @@
                     <a href="Javascript:" id="listBox_01">
                         <div class="listBox list_01">
                             <div class="listTitleBox vc">
+                                <div class="listTitleImgBox">
+                                    <img src="img/gym_img.png" class="gym_img_logo" alt="짐매니저 로고">
+                                </div>
                                 <div class="listTextBox">
                                     <div>WEB DESIGN & WEB PUBLISHING</div>
                                     <br/>
@@ -64,6 +67,7 @@
             $(".listBox").css("height", $(window).height() - 165);
         });
         $('.bxslider').bxSlider();
+        $(".gym_img_logo").animate({left: '-=100px'}, 2000);
     });
     </script>
 </body>
