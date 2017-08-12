@@ -73,22 +73,29 @@ body {
 	position: relative;
 	margin: 0 auto;
 }
-.list_01{
-	width: 92%;
-	background-image: url("../img/bg_01.png");
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
 .listTitleBox{
 	position: absolute;
 	width: 650px;
 	height: 200px;
 	right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 	background-color: #fff;
-	padding: 60px;
 }
-.listBox>.listTitleBox>.listTitleImgBox>img.gym_img_logo{
+.gymPd{
+    padding: 60px;
+}
+.vectorPd{
+    padding: 50px 60px;
+}
+.list_01{
+    width: 92%;
+    background-image: url("../img/bg_01.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.listBox>.listTitleBox>.listTitleImgBox>img.gym_img_logo,img.vexctor_img_logo{
 	max-width: 80%;
 	width: 656px;
 }
@@ -105,4 +112,26 @@ body {
 }
 .listBox>.listTitleBox>img{
 	width: 100%;
+}
+.list_02{
+    width: 92%;
+    background-image: url("../img/bg_02.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .listTitleBox{
+    top: inherit;
+    bottom: 0;
+    width: 100%;
+    transform: none;
+  }
+  .list_01,.list_02{
+    width: 100%;
+  }
+  .listBox>.listTitleBox>.listTitleImgBox>img.gym_img_logo,img.vexctor_img_logo{
+    max-width: 95%;
+  }
 }
