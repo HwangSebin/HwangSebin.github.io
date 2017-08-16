@@ -1,7 +1,7 @@
 @charset "utf-8";
 body {
     font-family: "Lato", "Noto Sans", sans-serif;
-    font-size : 62.5%;
+    font-size: 62.5%;
 }
 
 .wrapper {
@@ -30,9 +30,10 @@ body {
     margin-right: 10px;
 }
 
-.navTxt{
-	font-weight: 300;
+.navTxt {
+    font-weight: 300;
 }
+
 .navTxt>a {
     color: #777992;
     font-size: 1.3rem;
@@ -57,11 +58,20 @@ body {
 
 .hc {
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-.vc{
-	top: 50%;
-	transform: translateY(-50%);
+
+.vc {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 
@@ -69,69 +79,125 @@ body {
     position: relative;
     top: 100px;
 }
-.listBox{
-	position: relative;
-	margin: 0 auto;
+
+.listBox {
+    position: relative;
+    margin: 0 auto;
 }
-.listTitleBox{
-	position: absolute;
-	width: 650px;
-	height: 200px;
-	right: 0;
+
+.listTitleBox {
+    position: absolute;
+    width: 650px;
+    height: 200px;
+    right: 0;
     top: 50%;
+    background-color: #fff;
     transform: translateY(-50%);
-	background-color: #fff;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
-.gymPd{
+
+.gymPd {
     padding: 60px;
 }
-.vectorPd{
+
+.vectorPd {
     padding: 50px 60px;
 }
-.list_01{
+
+.list_01 {
     width: 92%;
     background-image: url("../img/bg_01.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
-.listBox>.listTitleBox>.listTitleImgBox>img.gym_img_logo,img.vexctor_img_logo{
-	max-width: 80%;
-	width: 656px;
+
+.listBox>.listTitleBox>.listTitleImgBox>img.gym_img_logo,
+img.vexctor_img_logo {
+    max-width: 80%;
+    width: 656px;
 }
-.listBox>.listTitleBox>.listTextBox{
-	margin-top: 10px;
+
+.listBox>.listTitleBox>.listTextBox {
+    margin-top: 10px;
 }
-.listBox>.listTitleBox>.listTextBox>div{
-	font-size: 1.2rem;
-	color: #888;
-	display: inline-block;
+
+.listBox>.listTitleBox>.listTextBox>div {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #888;
+    display: inline-block;
 }
+
 .listBox>.listTitleBox>.listTextBox>div:first-child {
-	font-size: 1.5rem;
+    font-size: 1.5rem;
 }
-.listBox>.listTitleBox>img{
-	width: 100%;
+
+.listBox>.listTitleBox>img {
+    width: 100%;
 }
-.list_02{
+
+.viewTextBox{
+    width: 100%;
+    position: relative;
+}
+.viewTextBox>.viewTextWrap{
+    position: absolute;
+    right: 0;
+}
+.viewTextBox>.viewTextWrap>p{
+    display: inline-block;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #333;
+}
+.viewText{
+    margin-right: 0;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+p.viewText:hover{
+    margin-right: 10px;
+}
+
+.list_02 {
     width: 92%;
     background-image: url("../img/bg_02.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 @media (max-width: 768px) {
-  .listTitleBox{
-    top: inherit;
-    bottom: 0;
-    width: 100%;
-    transform: none;
-  }
-  .list_01,.list_02{
-    width: 100%;
-  }
-  .listBox>.listTitleBox>.listTitleImgBox>img.gym_img_logo,img.vexctor_img_logo{
-    max-width: 95%;
-  }
+    .listTitleBox {
+        top: inherit;
+        bottom: 0;
+        width: 100%;
+        transform: none;
+    }
+    .list_01,
+    .list_02 {
+        width: 100%;
+    }
+    .listBox>.listTitleBox>.listTitleImgBox>img.gym_img_logo,
+    img.vexctor_img_logo {
+        max-width: 95%;
+    }
 }
