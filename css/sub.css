@@ -76,7 +76,6 @@ body {
 
 .subTopTitleBox {
     width: 80%;
-    height: 200px;
     background-color: #fff;
     position: absolute;
     top: 220px;
@@ -89,6 +88,103 @@ body {
     transform: translate(-50%);
 }
 
-.gymTitleImg{
-	max-width: 100%;
+.gymTitleImg {
+    max-width: 100%;
+}
+
+.subTitleText>span {
+    display: block;
+    text-transform: uppercase;
+}
+
+.subTitleText>span:first-child {
+    font-size: 1.7rem;
+    color: #666;
+    margin: 30px 0 2px;
+}
+
+.subTitleText>span:nth-child(2) {
+    font-size: 1.2rem;
+    color: #666;
+    font-style: italic;
+}
+
+.subLinkBtn {
+    padding-top: 32px;
+}
+
+.subLinkBtn>button {
+    width: 300px;
+    background: 0 0;
+    cursor: pointer;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+    transition: all .3s;
+    border: 1px solid #a0b1de;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 0;
+    color: #606978;
+    overflow: hidden;
+}
+
+.subLinkBtn>button:hover {
+    color: #fff;
+}
+
+
+
+
+/*Adding the hover effect base */
+
+.subLinkBtn>button::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #a0b1de;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .3s;
+    z-index: -1;
+}
+
+
+
+
+/*Fade in*/
+
+.subLinkBtn>button.fade::before {
+    opacity: 0;
+}
+
+.subLinkBtn>button.fade:hover::before {
+    opacity: 1;
+}
+
+
+
+/*Slide in from left*/
+
+.subLinkBtn>button.left::before {
+    transform: translate(-100%, 0);
+}
+
+.subLinkBtn>button.left:hover::before {
+    transform: translate(0, 0);
+}
+
+
+@media (max-width: 1180px) {
+    .subLinkBtn>button {
+        width: 250px;
+    }
+}
+@media (max-width: 1110px) {
+    .subLinkBtn>button {
+        width: 200px;
+    }
 }
