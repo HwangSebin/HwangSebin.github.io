@@ -15,47 +15,6 @@ body {
     position: relative;
 }
 
-#navWrap {
-    width: auto;
-    position: absolute;
-    right: 4%;
-    top: 63px;
-}
-
-#navWrap>div {
-    display: inline-block;
-}
-
-#navWrap>div:first-child {
-    margin-right: 10px;
-}
-
-.navTxt {
-    font-weight: 300;
-}
-
-.navTxt>a {
-    color: #777992;
-    font-size: 1.3rem;
-    transition: 0.5s ease-in-out;
-    -webkit-transition: 0.5s ease-in-out;
-}
-
-.navTxt>a:hover {
-    color: #a0b1de;
-    text-decoration: line-through;
-}
-
-.navTxt>a:active {
-    color: #92a2cd;
-}
-
-.logoImg {
-    position: absolute;
-    top: 43px;
-    left: 4%;
-}
-
 .hc {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -120,29 +79,31 @@ body {
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 }
-
-.listBox>.listTitleBox>.listTitleImgBox>img.gym_img_logo,
+.listBox>a>.listTitleBox{
+    cursor: pointer;
+}
+.listBox>a>.listTitleBox>.listTitleImgBox>img.gym_img_logo,
 img.vexctor_img_logo {
     max-width: 80%;
     width: 656px;
 }
 
-.listBox>.listTitleBox>.listTextBox {
+.listBox>a>.listTitleBox>.listTextBox {
     margin-top: 10px;
 }
 
-.listBox>.listTitleBox>.listTextBox>div {
+.listBox>a>.listTitleBox>.listTextBox>div {
     font-size: 1.2rem;
     text-transform: uppercase;
     color: #888;
     display: inline-block;
 }
 
-.listBox>.listTitleBox>.listTextBox>div:first-child {
+.listBox>a>.listTitleBox>.listTextBox>div:first-child {
     font-size: 1.5rem;
 }
 
-.listBox>.listTitleBox>img {
+.listBox>a>.listTitleBox>img {
     width: 100%;
 }
 
@@ -199,5 +160,8 @@ p.viewText:hover{
     .listBox>.listTitleBox>.listTitleImgBox>img.gym_img_logo,
     img.vexctor_img_logo {
         max-width: 95%;
+    }
+    .listBox>a>.listTitleBox>.listTextBox>div:first-child{
+        font-size: 1.3rem;
     }
 }
