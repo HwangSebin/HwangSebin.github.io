@@ -255,6 +255,6 @@ span.subTypeDate {
 }
 @media (max-width: 376px){
 .subSlider01_img>img {
-        max-width: 100%;
+        max-width: 280px;
     }
 }
