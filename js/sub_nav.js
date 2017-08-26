@@ -5,11 +5,11 @@ $(function(){
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
      //console.log(scroll);
-    if (scroll >= 145) {
+    if (scroll >= 130) {
         //console.log('a');
-        $('.subNavScroll').fadeIn(500);
+        $('.subNavScroll').fadeIn(400);
     } else {
         //console.log('a');
-        $('.subNavScroll').fadeOut(500);
+        $('.subNavScroll').fadeOut(400);
     }
 });
