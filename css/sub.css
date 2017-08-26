@@ -216,6 +216,11 @@ span.subTypeDate {
     padding-left: 150px;
     width: 800px;
     max-width: 100%;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .subContentTextBox {
@@ -312,7 +317,16 @@ img.subContentImg01 {
     	padding-right: 120px;
     }
 }
-
+@media (max-width: 870px) {
+    .contentTitle01>img.landingTitleTxt {
+        width: 650px;
+    }
+}
+@media (max-width: 800px) {
+    .contentTitle01>img.landingTitleTxt {
+        width: 600px;
+    }
+}
 @media (max-width: 768px) {
     .subTopTitleBox {
         width: 83%;
@@ -337,11 +351,28 @@ img.subContentImg01 {
     .subSlider01_img>img {
         max-width: 450px;
     }
+    .contentTitle01>img.landingTitleTxt{
+    	padding: 0 50px;
+    }
+    
 }
-
+@media(max-width: 765px) {
+	.subContentTextBox,.subContentTextBoxR{
+    	padding: 0 100px;
+    }
+}
 @media (max-width: 500px) {
     .subSlider01_img>img {
         max-width: 350px;
+    }
+}
+
+@media(max-width: 414px) {
+	.contentTitle01>img.landingTitleTxt{
+		padding: 0;
+	}
+	.subContentTextBox,.subContentTextBoxR{
+    	padding: 0 50px;
     }
 }
 
