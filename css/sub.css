@@ -89,6 +89,7 @@ body {
 
 
 
+
 /*Adding the hover effect base */
 
 .subLinkBtn>button::before {
@@ -106,6 +107,7 @@ body {
 
 
 
+
 /*Fade in*/
 
 .subLinkBtn>button.fade::before {
@@ -115,6 +117,7 @@ body {
 .subLinkBtn>button.fade:hover::before {
     opacity: 1;
 }
+
 
 
 
@@ -153,6 +156,7 @@ span.subTypeDate {
     color: #666;
     line-height: 20px;
 }
+
 
 
 
@@ -205,6 +209,7 @@ span.subTypeDate {
 
 
 
+
 /* 내용 시작 */
 
 .contentTitle01 {
@@ -251,6 +256,7 @@ span.subTypeDate {
 
 .subContentImgBox {
     margin-top: 100px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -259,6 +265,41 @@ img.subContentImg01 {
     max-width: 100%;
 }
 
+.subContentWrap01 {
+    padding: 0 300px;
+    margin-bottom: 80px;
+}
+
+img.subContentImg02 {
+    margin-top: 30px;
+    width: 1061px;
+    max-width: 100%;
+}
+
+.subContentImgWrap {
+    margin-top: 30px;
+}
+
+img.subContentImg03 {
+    width: 499px;
+    max-width: 100%;
+}
+
+@media (max-width: 1440px) {
+    .subContentWrap01 {
+        padding: 0 250px;
+    }
+}
+@media (max-width: 1366px) {
+    .subContentWrap01 {
+        padding: 0 200px;
+    }
+}
+@media (max-width: 1280px) {
+    .subContentWrap01 {
+        padding: 0 150px;
+    }
+}
 @media (max-width: 1180px) {
     .subLinkBtn>button {
         width: 250px;
@@ -281,6 +322,9 @@ img.subContentImg01 {
     .subSlider01_img>img {
         max-width: 333px;
     }
+    .subContentWrap01 {
+        padding: 0 100px;
+    }
 }
 
 @media (max-width: 1012px) {
@@ -292,9 +336,8 @@ img.subContentImg01 {
         padding-left: 150px;
     }
     .subContentTextBoxR {
-    	padding-right: 150px;
+        padding-right: 150px;
     }
-
 }
 
 @media (max-width: 960px) {
@@ -313,20 +356,23 @@ img.subContentImg01 {
     .subContentTextBox {
         padding-left: 120px;
     }
-    .subContentTextBoxR{
-    	padding-right: 120px;
+    .subContentTextBoxR {
+        padding-right: 120px;
     }
 }
+
 @media (max-width: 870px) {
     .contentTitle01>img.landingTitleTxt {
         width: 650px;
     }
 }
+
 @media (max-width: 800px) {
     .contentTitle01>img.landingTitleTxt {
         width: 600px;
     }
 }
+
 @media (max-width: 768px) {
     .subTopTitleBox {
         width: 83%;
@@ -349,18 +395,20 @@ img.subContentImg01 {
         margin-bottom: 15px;
     }
     .subSlider01_img>img {
-        max-width: 450px;
+        max-width: 300px;
     }
-    .contentTitle01>img.landingTitleTxt{
-    	padding: 0 50px;
+    .contentTitle01>img.landingTitleTxt {
+        padding: 0 50px;
     }
-    
 }
+
 @media(max-width: 765px) {
-	.subContentTextBox,.subContentTextBoxR{
-    	padding: 0 100px;
+    .subContentTextBox,
+    .subContentTextBoxR {
+        padding: 0 100px;
     }
 }
+
 @media (max-width: 500px) {
     .subSlider01_img>img {
         max-width: 350px;
@@ -368,11 +416,15 @@ img.subContentImg01 {
 }
 
 @media(max-width: 414px) {
-	.contentTitle01>img.landingTitleTxt{
-		padding: 0;
-	}
-	.subContentTextBox,.subContentTextBoxR{
-    	padding: 0 50px;
+    .contentTitle01>img.landingTitleTxt {
+        padding: 0;
+    }
+    .subContentTextBox,
+    .subContentTextBoxR {
+        padding: 0 50px;
+    }
+	.subContentWrap01 {
+        padding: 0 50px;
     }
 }
 
