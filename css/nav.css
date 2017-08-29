@@ -184,4 +184,27 @@ body {
     .subNav>#subnavWrap>.navTxt>a {
         font-size: 1.2rem;
     }
+    .logoImg{
+        top: 30px;
+    }
+    #navWrap{
+        top: 54px;
+    }
+}
+@media (max-width: 414px) {
+    .subNavScroll,.subNav{
+        height: 70px;
+    }
+    .logoImg,.subNavScroll>.logoImgScroll,.subNav>.logoImg{
+        top: 22px;
+    }
+    .navTxt>a, .subNav>#subnavWrap>.navTxt>a,.subNavScroll>#subnavWrapScroll>.navTxt>a{
+        font-size: 1rem;
+    }
+    .logoImg>a>img.mainSvg,.subNav>.logoImg>a>img.subSvg,.subNavScroll>.logoImgScroll>a>img.subSvg{
+        width: 100px;
+    }
+    #navWrap,.subNavScroll>#subnavWrapScroll,.subNav>#subnavWrap{
+        top: 36px;
+    }
 }
