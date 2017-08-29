@@ -10,7 +10,7 @@ body {
     width: auto;
     position: absolute;
     right: 4%;
-    top: 69px;
+    top: 53px;
 }
 
 #navWrap>div {
@@ -43,7 +43,7 @@ body {
 
 .logoImg {
     position: absolute;
-    top: 43px;
+    top: 30px;
     left: 4%;
 }
 
@@ -66,7 +66,7 @@ body {
     width: auto;
     position: absolute;
     right: 4%;
-    top: 69px;
+    top: 53px;
 }
 
 .subNav>#subnavWrap>div {
@@ -100,7 +100,7 @@ body {
 
 .subNav>.logoImg {
     position: absolute;
-    top: 43px;
+    top: 30px;
     left: 4%;
 }
 
@@ -127,7 +127,7 @@ body {
     width: auto;
     position: absolute;
     right: 4%;
-    top: 69px;
+    top: 53px;
 }
 
 .subNavScroll>#subnavWrapScroll>div {
@@ -161,7 +161,7 @@ body {
 
 .subNavScroll>.logoImgScroll {
     position: absolute;
-    top: 43px;
+    top: 30px;
     left: 4%;
 }
 
