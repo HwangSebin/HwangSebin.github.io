@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.lazyload.min.js"></script>
+    <title>Document</title>
+    <style type="text/css">
+    .lazy {
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body style="height: 1000px;">
+    <img class="lazy" data-original="img/bg_01.png" style="margin-bottom: 100px ;">
+    <img class="lazy" data-original="img/bg_02.png" style="margin-bottom: 100px ; width: 200px;">
+    <img class="lazy" data-original="img/bg_03.png" style="margin-bottom: 100px ; width: 200px; display: block;">
+    <script type="text/javascript ">
+    $(document).ready(function() {
+        $(".lazy").lazyload({
+            effect: "fadeIn"
+        })
+    });
+    </script>
+</body>
+
+</html>
