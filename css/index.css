@@ -157,6 +157,18 @@ p.viewText:hover{
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 }
+.list_04 {
+    width: 92%;
+    background-image: url("../img/bg_04.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
 @media (max-width: 768px) {
     .listTitleBox {
         top: inherit;
