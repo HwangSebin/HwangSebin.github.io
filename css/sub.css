@@ -32,6 +32,9 @@ body {
 .subVectorImgbg{
 	background-image: url("../img/sub_bg_02.png");
 }
+.subMpImgBg{
+    background-image: url("../img/sub_bg_03.png");
+}
 .subTopTitleBox {
     width: 80%;
     background-color: #fff;
@@ -405,6 +408,13 @@ img.sub-vector-img_02{
 }
 .sub-vector-contentBoxImg01{
     margin-top: 50px;
+}
+
+/* 마플 */
+
+img.subContentImg05{
+width: 1080px;
+max-width: 100%;
 }
 /* 미디어쿼리 */
 @media (max-width: 1440px) {

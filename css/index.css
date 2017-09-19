@@ -106,6 +106,10 @@ img.vexctor_img_logo {
 .listBox>a>.listTitleBox>img {
     width: 100%;
 }
+img.leaky_img_logo{
+    width: 225px;
+    max-width: 100%;
+}
 
 .viewTextBox{
     width: 100%;
