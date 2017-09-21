@@ -79,9 +79,6 @@ body {
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 }
-.listBox>a>.listTitleBox{
-    cursor: pointer;
-}
 .listBox>a>.listTitleBox>.listTitleImgBox>img.gym_img_logo,
 img.vexctor_img_logo {
     max-width: 80%;
@@ -182,12 +179,19 @@ p.viewText:hover{
     }
     .list_01,
     .list_02,
-    .list_03 {
+    .list_03,
+    .list_04 {
         width: 100%;
     }
-    .listBox>.listTitleBox>.listTitleImgBox>img.gym_img_logo,
-    img.vexctor_img_logo {
+    .listBox>a>.listTitleBox>.listTitleImgBox>
+    img.vexctor_img_logo{
         max-width: 95%;
+    }
+    .listBox>a>.listTitleBox>.listTitleImgBox>img.leaky_img_logo {
+        max-width: 45%;
+    }
+    .listBox>a>.listTitleBox>.listTitleImgBox>img.gym_img_logo{
+        max-width: 100%;
     }
     .listBox>a>.listTitleBox>.listTextBox>div:first-child{
         font-size: 1.3rem;
