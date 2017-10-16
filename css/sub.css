@@ -550,6 +550,9 @@ img.promoMaxWh{
 .promoLinkBtn>button.twoBtn:first-child{
 	margin-right: 20px;
 }
+img.promoImg04{
+	width: 300px;
+}
 @media (max-width: 1440px) {
     .subContentWrap01 {
         padding: 0 250px
