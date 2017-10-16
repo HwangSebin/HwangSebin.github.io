@@ -150,8 +150,25 @@
                         </span>
                     <br/>
                     <div class="promoLinkBtn promo_center">
-                        <button class="left twoBtn" onclick="location.href='sevenspring/index.html' "> 세븐스프링스 랜딩 페이지 디자인 → </button>
-                        <button id="demo06-1" class="left twoBtn" href="#modal-06-1"> 세븐스프링스 아트웍 작업 단계 → </button>
+                        <button class="left twoBtn" 
+                        onclick="window.open('https://hwangsebin.github.io/sevenspring/index.html')"> 
+                        세븐스프링스 랜딩 페이지 디자인 → 
+                        </button>
+                        <button id="demo07-1" class="left twoBtn" href="#modal-07-1"> 세븐스프링스 아트웍 작업 단계 → </button>
+                    </div>
+                    </span>
+                </div>
+                <div class="col-xs-12 promoContentWrap">
+                    <span class="promoContentBox">
+                        <img src="img/sub-promo-img06.png" class="promoImg05 promoMaxWh" alt="짐매니저"> <br/>
+                        <span class="promo_txt">
+                            짐매니저의 새로운 브랜딩을 기반으로 SNS컨텐츠를 제작하였다. 
+                        </span>
+                    <br/>
+                    <div class="promoLinkBtn promo_center">
+                        <button id="demo08-1" class="left twoBtn" href="#modal-08-1"> 
+                        짐매니저 SNS 디자인 → 
+                        </button>
                     </div>
                     </span>
                 </div>
@@ -236,6 +253,30 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <img src="img/sub_promo_img03-2.jpg" class="promo_modal_img03 modal_img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal-07-1">
+            <div id="btn-close-modal" class="close-modal-07-1">
+                <img src="img/x_btn.png" class="close_btn" id="promoModalClose" />
+            </div>
+            <div class="modal-content container-fluid promoModalCt">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img src="img/sub_promo_img04-1.jpg" class="promo_modal_img03 modal_img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal-08-1">
+            <div id="btn-close-modal" class="close-modal-08-1">
+                <img src="img/x_btn.png" class="close_btn" id="promoModalClose" />
+            </div>
+            <div class="modal-content container-fluid promoModalCt">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img src="img/sub_promo_img05-1.png" class="promo_modal_img03 modal_img">
                     </div>
                 </div>
             </div>
@@ -413,6 +454,18 @@
             });
             $("#demo06-1").animatedModal({
                 modalTarget: 'modal-06-1',
+                animatedIn: 'fadeIn',
+                animatedOut: 'fadeOut',
+                color: '#fff'
+            });
+            $("#demo07-1").animatedModal({
+                modalTarget: 'modal-07-1',
+                animatedIn: 'fadeIn',
+                animatedOut: 'fadeOut',
+                color: '#fff'
+            });
+            $("#demo08-1").animatedModal({
+                modalTarget: 'modal-08-1',
                 animatedIn: 'fadeIn',
                 animatedOut: 'fadeOut',
                 color: '#fff'
