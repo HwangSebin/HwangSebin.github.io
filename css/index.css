@@ -75,7 +75,7 @@ body {
 }
 
 .list_01 {
-    background-image: url(../img/bg_01.png);
+    background-image: url(../img/bg_01.jpg);
     -webkit-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out
@@ -172,7 +172,7 @@ p.viewText:hover {
 }
 
 .list_03 {
-    background-image: url(../img/bg_03.png);
+    background-image: url(../img/bg_03.jpg);
     -webkit-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out
