@@ -75,7 +75,7 @@ body {
 }
 
 .list_01 {
-    background-image: url(../img/bg_01.jpg);
+    background-image: url("https://lh5.googleusercontent.com/_AdHvtAEyYjMm-txzvHBUcaJodTAsLIkJMFwUeeaD218nGbepQXR1-gkf-YPYDRkPxa_odj8Bi9FqsQ=w3360-h1898-rw");
     -webkit-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out
