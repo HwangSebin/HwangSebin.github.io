@@ -195,6 +195,16 @@ p.viewText:hover {
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out
 }
+.list_06 {
+    width: 92%;
+    background-image: url("https://previews.dropbox.com/p/thumb/AAr1BGUeOApzTFZHI5ccTFAyj3fuYE37EXbedFfiRjPB1fDhTEREuTiYbjFTntwcbNSeH4FtHbWQ5XAj2dW-XyQqgHNKnH6H7zOJ5hEwcEnV2or518_cn2JwuB7pcLphEAC-6QINBGeu5YyMYS-13f-IxwIEMHhcVBiN9hKBrDNDW3xsOw0kxs3ja9ox4jjiEK5fAaegRM1amiNH7vvqtobEFEgTYv7UVhuXQ4QEZnnLMlTxUDBlWoCa7N5UU_vu9TW-YVsvoz2yCWCERLNHmN8hmvtv9oSif4UKOcCnNbqwU4SwPGiEtPV7DkaokWgldl6kBd5zvybYIEtmm24C-_QT/p.png?fv_content=true&size_mode=5");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out
+}
 
 @media (max-width:768px) {
     .listTitleBox {
@@ -209,7 +219,8 @@ p.viewText:hover {
     .list_02,
     .list_03,
     .list_04,
-    .list_05 {
+    .list_05,
+    .list_06 {
         width: 100%
     }
     .listBox>a>.listTitleBox>.listTitleImgBox>img.vexctor_img_logo {
