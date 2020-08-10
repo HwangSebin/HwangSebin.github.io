@@ -39,8 +39,8 @@ function initScrollbooster() {
         scrollMode: 'native',
         direction: 'horizontal',
         // lockScrollOnDragDirection: 'horizontal',
-        // pointerMode: 'mouse',
-        emulateScroll: true, // scroll on wheel events
+        pointerMode: 'mouse',
+        emulateScroll: false,
       });
     });
   }
